@@ -13,7 +13,6 @@ import csv
 import unicodedata
 
 # Configuração do MongoDB
-uri = "mongodb+srv://PECI:evaluation@peci.ss2x5.mongodb.net/?retryWrites=true&w=majority&appName=PECI"
 client = MongoClient(uri, server_api=ServerApi('1'))
 db = client.assistente_cozinha
 feedback_collection = db.feedback

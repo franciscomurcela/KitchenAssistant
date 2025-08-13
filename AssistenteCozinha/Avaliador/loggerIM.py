@@ -11,7 +11,6 @@ import sys
 # URL do WebSocket
 websocket_url = "wss://localhost:8005/IM/USER1/APP"
 
-client = MongoClient("mongodb+srv://PECI:evaluation@peci.ss2x5.mongodb.net/?retryWrites=true&w=majority&appName=PECI")
 
 # Escolher a base de dados e coleção
 db = client.assistente_cozinha

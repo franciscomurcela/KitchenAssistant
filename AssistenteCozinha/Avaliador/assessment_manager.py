@@ -12,7 +12,6 @@ import os
 # -------------------------------
 # Configuração do MongoDB
 # -------------------------------
-uri = "mongodb+srv://PECI:evaluation@peci.ss2x5.mongodb.net/?retryWrites=true&w=majority&appName=PECI"
 client = MongoClient(uri)
 db = client.assessment_db
 feedback_collection = db.feedback_logs

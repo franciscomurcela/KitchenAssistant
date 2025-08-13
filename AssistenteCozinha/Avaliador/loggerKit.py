@@ -6,7 +6,6 @@ from datetime import datetime
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 
-client = MongoClient("mongodb+srv://PECI:evaluation@peci.ss2x5.mongodb.net/?retryWrites=true&w=majority&appName=PECI")
 
 # Escolher a base de dados e coleção
 db = client["assistente_cozinha"]
