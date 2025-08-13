@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EVAL Dashboard</title>
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+  <!-- ECharts -->
+  <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+  <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<aside class="sidebar">
+  <div>
+    <div class="sidebar-header">
+      <h2>EVAL DASHBOARD</h2>
+      <h3>Kitchen Assistant</h3>
+    </div>
+    <nav class="sidebar-nav" id="nav">
+      <a href="#performance-overall" onclick="setActive(this)">Classificação Geral</a>
+      <a href="#user-opinions" onclick="setActive(this)">Opiniões dos Utilizadores</a>
+      <a href="#task-performance" onclick="setActive(this)">Desempenho nas Tarefas</a>
+      <a href="#feedback_history" onclick="setActive(this)">Registos de Feedback</a>
+    </nav>
+  </div>
+  <button class="btn-logout" onclick="logout()">Logout</button>
+</aside>
+<main class="content">
+  <section id="performance-overall" class="chart-box">
+    <h2 class="chart-title">Desempenho Geral</h2>
+    <div class="chart-group">      <div class="chart-item"><div id="gaugeChart"></div></div>
+    </div>
+  </section>
+  <section id="user-opinions" class="chart-box">
+    <h2 class="chart-title">Opiniões dos Utilizadores</h2>
+    <div class="user-opinion-controls">
+      <label for="userSelect" style="font-size:1.1rem; margin-right:10px;">Universo de utilizadores:</label>
+      <select id="userSelect" class="modern-select" style="font-size:1.05rem; margin-right:18px; min-width:90px;"></select>
+      <button id="toggleScaleBtn" class="modern-btn small-btn" onclick="toggleScale()">Mostrar em escala 0-5</button>
+      <button id="toggleSwarmBtn" class="modern-btn small-btn" onclick="toggleSwarmplot()">Mostrar Swarmplot</button>
+    </div>
+    <div class="chart-item"><canvas id="metricsChart"></canvas></div>
+    <div id="metricsBarLabels" style="display:flex;justify-content:space-between;align-items:flex-start;margin-top:8px;"></div>
+    <!-- Garantir espaço para o swarmplot -->
+    <div id="swarmplotDiv" style="width:100%;height:500px;display:none;"></div>
+  </section>
+  <section id="task-performance" class="chart-box">
+    <h2 class="chart-title">Desempenho nas Tarefas</h2>
+    <div id="stackedLineChart"></div>
+  </section>
+  <section id="feedback_history" class="chart-box">
+    <h2 class="chart-title">Registo de Feedbacks</h2>
+    <div id="justificacoes-container" style="max-height:800px; overflow-y:auto; margin-top:24px;">
+      <div class="filter-row" style="position: sticky; top: 0; z-index: 2; background: #fff; box-shadow: 0 2px 8px #0001; padding-top: 8px; padding-bottom: 18px; border-radius: 12px 12px 0 0; margin-bottom: 32px;">
+        <label>De:<input type="date" id="filtroDataInicio" class="modern-input"></label>
+        <label>Até:<input type="date" id="filtroDataFim" class="modern-input"></label>
+        <label>Utilizador:
+          <select id="filtroUtilizador" class="modern-select">
+            <option value="">Todos</option>
+          </select>
+        </label>
+        <label>Pergunta:
+          <select id="filtroPergunta" class="modern-select" style="min-width: 220px; max-width: 400px; width: 100%; font-size: 1.05rem; line-height: 1.3; padding: 4px 8px;" onchange="mostrarPerguntaSelecionada()">
+            <option value="">Todas</option>
+          </select>
+        </label>
+        <label>Classificação:
+          <select id="filtroClassificacao" class="modern-select">
+            <option value="">Todas</option>
+            <option value="5">5</option>
+            <option value="4">4</option>
+            <option value="3">3</option>
+            <option value="2">2</option>
+            <option value="1">1</option>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+          </select>
+        </label>
+        <label>Ordenar por:
+          <select id="filtroOrdenar" class="modern-select">
+            <option value="data_desc">Data (mais recente)</option>
+            <option value="data_asc">Data (mais antiga)</option>
+            <option value="class_desc">Classificação (maior)</option>
+            <option value="class_asc">Classificação (menor)</option>
+          </select>
+        </label>
+        <button onclick="fetchJustificacoes()" class="modern-btn small-btn">Filtrar</button>
+      </div>
+      <table style="width:100%; border-collapse:collapse;">
+        <thead style="background: #f2f2f2;">
+          <tr><th>Data</th><th>Utilizador</th><th>Pergunta</th><th>Resposta</th></tr>
+        </thead>
+        <tbody id="justificacoes-list"></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+<script src="static/script/scores.js"></script>
+<script>
+  function mostrarPerguntaSelecionada() {
+  const sel = document.getElementById('filtroPergunta');
+  const div = document.getElementById('perguntaSelecionada');
+  if (sel && div) {
+    const idx = sel.selectedIndex;
+    const txt = idx > 0 ? sel.options[idx].text : '';
+    div.textContent = txt;
+  }
+}
+// Atualizar ao carregar a página
+if (document.getElementById('filtroPergunta')) {
+  document.getElementById('filtroPergunta').addEventListener('change', mostrarPerguntaSelecionada);
+  window.addEventListener('DOMContentLoaded', mostrarPerguntaSelecionada);
+}
+
+  async function fetchJustificacoes(){
+  try{
+    const r = await fetch('/api/justificacoes');
+    const arr = await r.json();
+    // Preencher selects de utilizador e pergunta
+    const utilizadores = Array.from(new Set(arr.map(i => i.utilizador))).sort();
+    const perguntas = Array.from(new Set(arr.map(i => i.pergunta))).sort();
+    const selUser = document.getElementById('filtroUtilizador');
+    const selPerg = document.getElementById('filtroPergunta');
+    const selClass = document.getElementById('filtroClassificacao');
+    const selOrd = document.getElementById('filtroOrdenar');
+    if(selUser && selUser.options.length <= 1) {
+      utilizadores.forEach(u => {
+        const opt = document.createElement('option');
+        opt.value = u; opt.textContent = u;
+        selUser.appendChild(opt);
+      });
+    }
+    if(selPerg && selPerg.options.length <= 1) {
+      perguntas.forEach(p => {
+        const opt = document.createElement('option');
+        opt.value = p; opt.textContent = p;
+        selPerg.appendChild(opt);
+      });
+    }
+    // Filtros
+    const f1 = document.getElementById('filtroDataInicio').value;
+    const f2 = document.getElementById('filtroDataFim').value;
+    const user = selUser ? selUser.value : '';
+    const pergunta = selPerg ? selPerg.value : '';
+    const classificacao = selClass ? selClass.value : '';
+    const ordenar = selOrd ? selOrd.value : 'data_desc';
+    const t1 = f1 ? new Date(f1).getTime() : 0;
+    const t2 = f2 ? new Date(f2).getTime() + 86400000 : Infinity;
+    // Função para normalizar resposta para classificação
+    function normalizaClassificacao(resp) {
+      let classif = (resp||'').toString().toLowerCase().trim();
+      if (["sim", "sim sim", "claro", "afirmativo", "positivo", "yes"].some(p=>classif.includes(p))) return "sim";
+      if (["não", "nao", "não consegui", "nao consegui", "negativo", "nunca", "no"].some(n=>classif.includes(n))) return "nao";
+      if (["1","2","3","4","5"].includes(classif)) return classif;
+      if (["um","uma"].some(p=>classif.includes(p))) return "1";
+      if (["dois","duas"].some(p=>classif.includes(p))) return "2";
+      if (["três"].some(p=>classif.includes(p))) return "3";
+      if (["quatro"].some(p=>classif.includes(p))) return "4";
+      if (["cinco"].some(p=>classif.includes(p))) return "5";
+      return "";
+    }
+    let fil = arr.filter(i => {
+      const ts = new Date(i.timestamp).getTime();
+      const classifNorm = normalizaClassificacao(i.resposta);
+      return ts >= t1 && ts < t2 &&
+        (!user || i.utilizador === user) &&
+        (!pergunta || i.pergunta === pergunta) &&
+        (!classificacao || classifNorm === classificacao);
+    });
+    // Ordenação
+    fil = fil.sort((a, b) => {
+      const va = normalizaClassificacao(a.resposta);
+      const vb = normalizaClassificacao(b.resposta);
+      let vaNum = va === "sim" ? 6 : va === "nao" ? 0 : parseInt(va)||-1;
+      let vbNum = vb === "sim" ? 6 : vb === "nao" ? 0 : parseInt(vb)||-1;
+      if(ordenar==="data_asc") return new Date(a.timestamp)-new Date(b.timestamp);
+      if(ordenar==="data_desc") return new Date(b.timestamp)-new Date(a.timestamp);
+      if(ordenar==="class_asc") return vaNum-vbNum;
+      if(ordenar==="class_desc") return vbNum-vaNum;
+      return 0;
+    });
+    const tb = document.getElementById('justificacoes-list');
+    tb.innerHTML = '';
+    if(!fil.length){
+      tb.innerHTML = '<tr><td colspan="4">Nenhum feedback encontrado.</td></tr>';
+      return;
+    }
+    fil.forEach(i => {
+      const tr = document.createElement('tr');
+      tr.innerHTML = `<td>${new Date(i.timestamp).toLocaleString('pt-PT')}</td><td>${i.utilizador}</td><td>${i.pergunta}</td><td>${i.resposta}</td>`;
+      tb.appendChild(tr);
+    });
+  }catch(e){console.error(e);}
+}
+</script>
+</body>
+</html>

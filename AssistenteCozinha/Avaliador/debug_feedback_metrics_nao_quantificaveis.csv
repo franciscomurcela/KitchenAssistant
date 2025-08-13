@@ -1,0 +1,62 @@
+intent,question,resposta,metrica,valor_normalizado,utilizador_nome
+feedback,Conseguiu compreender a saudação do assistente?,Olá assistente,comunica_bem,,
+feedback,Conseguiu compreender a saudação do assistente?,Olá assistente,comunica_bem,,
+feedback,O assistente tem-lhe apresentado receitas do seu agrado?,Quero uma receita de amêijoas,estou_satisfeito,,
+feedback,Conseguiu compreender a saudação do assistente?,Foi tudo natural,comunica_bem,,
+feedback,O assistente respondeu de forma natural aos cumprimentos?,Olá assistente,,,
+feedback,O assistente respondeu de forma natural aos cumprimentos?,Olá assistente,,,Utilizador 2
+feedback,"Numa escala de 1 a 5, que número atribuiria em relação ao seu entendimento sobre o que cada comando faz?",Ajuda,comunica_bem,,Utilizador 2
+feedback,"Numa escala de 1 a 5, o quanto você se sentiu frustrado com a forma como o assistente repetiu um passo?",Ajuda,faz_oque_quero,,Utilizador 2
+feedback,Numa escala de 1 a 5 o quão esclarecedor foi o assistente ao explicar as funcionalidades?,Ajudas é,comunica_bem,,Utilizador 3
+feedback,"Numa escala de 1 a 5, o quão bem descritos estavam os comandos?",Olá,comunica_bem,,Utilizador 3
+feedback,Estou a fazer demasiadas perguntas de feedback?,Casa Viva,,,
+feedback,Já teve dificuldade em fazer o assistente entender que queria adicionar algo à lista?,Olá assistente,,,
+feedback,Conseguiu compreender a saudação do assistente?,viva,comunica_bem,,
+feedback,Acha que os comandos apresentados lhe foram úteis?,ajuda,faz_oque_quero,,Utilizador 1
+feedback,Considera que os comandos estão bem descritos?,ajuda,comunica_bem,,Utilizador 3
+feedback,As instruções fornecidas pelo assistente foram úteis?,ajuda,comunica_bem,,Utilizador 3
+feedback,"Numa escala de 1 a 5, em que medida você sentiu falta de alguma informação importante na repetição do passo?",Repete o passo,faz_oque_quero,,Utilizador 3
+feedback,Estou a ser demasiado intrusivo com as perguntas de feedback?,Olá assistente,,,
+feedback,Conseguiu compreender a saudação do assistente?,viva,comunica_bem,,
+feedback,Estou a ser demasiado intrusivo com as perguntas de feedback?,Olá assistente,,,
+feedback,O assistente respondeu de forma natural aos cumprimentos?,Olá assistente,,,
+feedback,O assistente respondeu de forma natural aos cumprimentos?,Olá assistente,,,
+feedback,"Numa escala de 1 a 5, o quão bem descritos estavam os comandos?",Ajuda ajuda,comunica_bem,,Utilizador 3
+feedback,Acha que os comandos apresentados lhe foram úteis?,Foram úteis,faz_oque_quero,,Utilizador 3
+avaliador_intrusividade,Estou a ser demasiado intrusivo com as perguntas de feedback?,olá assistente,,,
+feedback,Acha que os comandos apresentados lhe foram úteis?,Foram muito úteis,faz_oque_quero,,Utilizador 3
+feedback,Conseguiu perceber o que cada comando faz?,Ajuda,comunica_bem,,Utilizador 3
+avaliador_intrusividade,Estou a ser demasiado intrusivo com as perguntas de feedback?,assistente,,,
+feedback,O assistente foi claro ao explicar as funcionalidades?,Ajuda,comunica_bem,,Utilizador 3
+avaliador_intrusividade,Estou a ser demasiado intrusivo com as perguntas de feedback?,ajuda,,,Utilizador 3
+feedback,"Numa escala de 1 a 5, em que medida os comandos disponibilizados atenderam às suas necessidades?",Olá assistente,faz_oque_quero,,
+feedback,Acha que os comandos apresentados lhe foram úteis?,Ajuda,faz_oque_quero,,Utilizador 3
+feedback,Os exemplos de comandos foram úteis?,Ajuda,,,Utilizador 3
+avaliador_intrusividade,Estou a ser demasiado intrusivo com as perguntas de feedback?,ajuda,,,Utilizador 3
+feedback,Considera que os comandos estão bem descritos?,Ajuda,comunica_bem,,Utilizador 3
+feedback,Considera que os comandos estão bem descritos?,Ajuda,comunica_bem,,Utilizador 3
+feedback,"Numa escala de 1 a 5, que número atribuiria em relação ao seu entendimento sobre o que cada comando faz?",Ajuda,comunica_bem,,Utilizador 3
+feedback,"Numa escala de 1 a 5, que número atribuiria em relação ao seu entendimento sobre o que cada comando faz?",Ajuda,comunica_bem,,Utilizador 3
+feedback,Os exemplos de comandos foram úteis?,Ajuda,,,Utilizador 3
+feedback,O assistente foi claro ao explicar as funcionalidades?,Ajuda-me,comunica_bem,,Utilizador 3
+avaliador_intrusividade,Estou a ser demasiado intrusivo com as perguntas de feedback?,ajuda,,,Utilizador 3
+feedback,Os exemplos de comandos foram úteis?,ajuda,,,Utilizador 3
+feedback,"Numa escala de 1 a 5, que número atribuiria em relação ao seu entendimento sobre o que cada comando faz?",ajuda,comunica_bem,,Utilizador 3
+feedback,"Numa escala de 1 a 5, em que medida os comandos disponibilizados atenderam às suas necessidades?",Ajuda,faz_oque_quero,,Utilizador 3
+feedback,"Numa escala de 1 a 5, que número atribuiria em relação ao seu entendimento sobre o que cada comando faz?",Ajuda,comunica_bem,,Utilizador 3
+feedback,Numa escala de 1 a 5 o quão esclarecedor foi o assistente ao explicar as funcionalidades?,Ajuda,comunica_bem,,Utilizador 3
+feedback,Numa escala de 1 a 5 o quão explícitas achou as instruções?,Ajuda,comunica_bem,,Utilizador 3
+feedback,"Numa escala de 1 a 5, o quão satisfeito está com a variabilidade das receitas oferecidas pelo assistente?",Google assistente,estou_satisfeito,,
+feedback,Conseguiu perceber o que cada comando faz?,Ajuda,comunica_bem,,Utilizador 3
+feedback,Considera que os comandos estão bem descritos?,Ajuda,comunica_bem,,Utilizador 3
+feedback,O assistente respondeu de forma natural aos cumprimentos?,Sugere uma receita,,,Utilizador 2
+feedback,A resposta de despedida foi adequada?,Olá assistente,,,Utilizador 2
+feedback,A resposta de despedida foi adequada?,Olá assistente,,,Utilizador 2
+feedback,Os exemplos de comandos foram úteis?,Olá assistente,,,Utilizador 2
+feedback,O assistente respondeu de forma natural aos cumprimentos?,Google assistente,,,Utilizador 2
+feedback,O assistente respondeu de forma natural aos cumprimentos?,Olá assistente,,,Utilizador 2
+feedback,O assistente interpretou corretamente 'sim' em contextos críticos?,Olá assistente,,,Utilizador 2
+feedback,O assistente respondeu de forma natural aos cumprimentos?,Olá assistente,,,
+feedback,Conseguiu compreender a saudação do assistente?,Olá assistente,comunica_bem,,Utilizador 1
+feedback,O primeiro passo foi explicado de forma clara?,Olá assistente,,,
+feedback,Conseguiu compreender a saudação do assistente?,Futebol Clube do Porto,comunica_bem,,Utilizador 2

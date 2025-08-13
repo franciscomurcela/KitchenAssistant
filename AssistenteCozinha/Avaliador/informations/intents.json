@@ -1,0 +1,31 @@
+{
+    "intent_groups": {
+        "ask_help": "high_priority",
+        "ask_repeat_step": "high_priority",
+        "ask_random_recipe": "medium_priority",
+        "ask_specific_recipe": "medium_priority",
+        "add_pantry": "low_priority",
+        "remove_pantry": "low_priority",
+        "remove_all_pantry": "low_priority",
+        "ask_pantry": "low_priority",
+        "ask_specific_pantry": "low_priority",
+        "add_shopping_list": "low_priority",
+        "ask_shopping_list": "low_priority",
+        "remove_all_shopping_list": "low_priority",
+        "send_shopping_list": "low_priority",
+        "ask_all_recipes": "low_priority",
+        "ask_for_tools": "low_priority",
+        "ask_for_ingredients": "low_priority",
+        "ask_first_step": "low_priority",
+        "ask_next_step": "low_priority",
+        "add_pantry_barcode": "low_priority",
+        "remove_pantry_barcode": "low_priority",
+        "get_quantity_ingredient": "low_priority",
+        "get_expiration_date": "low_priority",
+        "greet": "low_priority",
+        "goodbye": "low_priority",
+        "affirm": "low_priority",
+        "deny": "low_priority",
+        "joke": "low_priority"
+    }
+}

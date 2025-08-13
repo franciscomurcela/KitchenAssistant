@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Interações WebSocket</title>
+    <style>
+        #interacoes {
+            width: 100%;
+            height: 300px;
+            border: 1px solid #ccc;
+            overflow-y: auto;
+            padding: 10px;
+            background: #f9f9f9;
+            font-family: sans-serif;
+        }
+        .mensagem {
+            margin-bottom: 8px;
+            padding: 6px 10px;
+            background-color: #e3f2fd;
+            border-radius: 5px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <h2>Interações recebidas</h2>
+    <div id="interacoes"></div>
+
+    <script>
+        const socket = new WebSocket("ws://localhost:8765");
+        const interacoesDiv = document.getElementById("interacoes");
+
+        socket.onopen = function() {
+            console.log("Conectado ao WebSocket!");
+        };
+
+        socket.onmessage = function(event) {
+            const mensagem = document.createElement("div");
+            mensagem.classList.add("mensagem");
+            mensagem.textContent = event.data;
+            interacoesDiv.appendChild(mensagem);
+            interacoesDiv.scrollTop = interacoesDiv.scrollHeight; // Auto scroll
+        };
+
+        socket.onclose = function() {
+            console.log("WebSocket desconectado.");
+        };
+
+        socket.onerror = function(error) {
+            console.error("Erro no WebSocket:", error);
+        };
+    </script>
+</body>
+</html>

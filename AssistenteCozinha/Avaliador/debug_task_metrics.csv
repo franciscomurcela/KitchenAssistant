@@ -1,0 +1,20 @@
+pergunta,tipo_de_tarefa,score
+O assistente tem-lhe apresentado receitas do seu agrado?,receitas,1
+"Numa escala de 1 a 5, o quanto você conseguiu perceber o que cada comando faz?",receitas,5
+As instruções fornecidas pelo assistente foram úteis?,receitas,5
+Acha que os comandos apresentados lhe foram úteis?,receitas,5
+As instruções fornecidas pelo assistente foram úteis?,receitas,5
+Considera que os comandos estão bem descritos?,receitas,5
+Acha que os comandos apresentados lhe foram úteis?,receitas,5
+Conseguiu perceber o que cada comando faz?,receitas,5
+"Numa escala de 1 a 5, o quão bem descritos estavam os comandos?",receitas,2
+As instruções fornecidas pelo assistente foram úteis?,receitas,5
+"Numa escala de 1 a 5, o quão clara e fácil de entender foi a repetição do passo feita pelo assistente?",receitas,4
+"Numa escala de 1 a 5, o quanto você se sentiu frustrado com a forma como o assistente repetiu um passo?",receitas,4
+Acha que os comandos disponibilizados foram limitados para as suas questões,receitas,5
+Acha que os comandos disponibilizados foram limitados para as suas questões,receitas,0
+"Numa escala de 1 a 5, o quão bem descritos estavam os comandos?",receitas,5
+Acha que os comandos disponibilizados foram limitados para as suas questões,receitas,0
+Acha que os comandos apresentados lhe foram úteis?,receitas,5
+"Numa escala de 1 a 5, o quão bem descritos estavam os comandos?",receitas,5
+"Numa escala de 1 a 5, o quão clara e fácil de entender foi a repetição do passo feita pelo assistente?",receitas,1

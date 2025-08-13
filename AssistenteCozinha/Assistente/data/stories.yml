@@ -1,0 +1,8 @@
+version: '3.1'
+
+stories:
+- story: Collect feedback
+  steps:
+    - intent: give_feedback
+    - action: utter_thanks
+

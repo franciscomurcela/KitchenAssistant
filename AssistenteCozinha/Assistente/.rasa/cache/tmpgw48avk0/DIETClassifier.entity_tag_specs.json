@@ -1,0 +1,52 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-data",
+      "2": "I-data",
+      "3": "L-data",
+      "4": "U-data",
+      "5": "B-ingrediente",
+      "6": "I-ingrediente",
+      "7": "L-ingrediente",
+      "8": "U-ingrediente",
+      "9": "B-quantidade",
+      "10": "I-quantidade",
+      "11": "L-quantidade",
+      "12": "U-quantidade",
+      "13": "B-receita",
+      "14": "I-receita",
+      "15": "L-receita",
+      "16": "U-receita",
+      "17": "B-unidade",
+      "18": "I-unidade",
+      "19": "L-unidade",
+      "20": "U-unidade",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-data": 1,
+      "I-data": 2,
+      "L-data": 3,
+      "U-data": 4,
+      "B-ingrediente": 5,
+      "I-ingrediente": 6,
+      "L-ingrediente": 7,
+      "U-ingrediente": 8,
+      "B-quantidade": 9,
+      "I-quantidade": 10,
+      "L-quantidade": 11,
+      "U-quantidade": 12,
+      "B-receita": 13,
+      "I-receita": 14,
+      "L-receita": 15,
+      "U-receita": 16,
+      "B-unidade": 17,
+      "I-unidade": 18,
+      "L-unidade": 19,
+      "U-unidade": 20,
+      "O": 0
+    },
+    "num_tags": 21
+  }
+]

@@ -1,0 +1,39 @@
+NAME = 'recipe name'
+
+INGREDIENTS = {
+    'maçã': '100 g',
+    'pera': '100 g',
+    'nutela': '100 g',
+    'rice': '100 g',
+    'pimento': '100 g',
+    'garlic': '100 g',
+    'beef': '100 g'
+}
+
+TOOLS = ['tool1', 'tool2', 'tool3']
+
+INSTRUCTIONS = { 
+    1: {
+        'description': 'descrição do passo',
+        'tools': ['tools1', 'tool2', 'tool3']
+    },
+    2: {
+        'description': 'descrição do passo',
+        'tools': ['tools1', 'tool2', 'tool3']
+    },
+    3: {
+        'description': 'descrição do passo',
+        'tools': ['tools1', 'tool2', 'tool3']
+    },
+	4: {
+        'description': 'descrição do passo',
+        'tools': ['tools1', 'tool2', 'tool3']
+    }}
+
+COOKING_TIME = '12'
+
+NUMBER_OF_SERVINGS = '4'
+
+IMAGE_URL = 'www.spoonacular.com',
+
+TAGS = ['tag1', 'tag2', 'tag3']

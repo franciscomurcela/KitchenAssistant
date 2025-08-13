@@ -1,0 +1,830 @@
+version: "3.1"
+
+nlu:
+#- regex: receita # regex to extract the recipe name
+#  examples: |
+#    - (?<=de\s)(\S+(?:\s+\S+)*)
+
+
+# ---------------------------------------------------------------------------------------------- [RECIPE]
+# Ask for all recipes
+- intent: ask_all_recipes
+  examples: |
+    - Quais são as receitas disponíveis
+    - Mostra-me as receitas disponíveis
+    - Quais são as receitas
+    - Quais são as receitas que tens
+    - Quais são as receitas que sabes
+    - Quais são as receitas que conheces
+    - Quais são as receitas que tens disponíveis
+    - Quais são as receitas que sabes fazer
+    - Quais são as receitas que tens para me sugerir
+    - Quais são as receitas que tens para me fazer
+    - Quais são as receitas que tens para me mostrar
+    - Quais são as receitas que tens para me dar
+    - Quais são as receitas que tens para me ensinar
+    - Quais são as receitas que tens para me ajudar
+    - Quais são as receitas que tens para me indicar
+    - Quais são as receitas que tens para me recomendar
+    - Quais são as receitas que tens para me oferecer
+    - Quais são as receitas que tens para me apresentar
+    - Quais são as receitas que tens para me sugerir
+    - Quais são as receitas que tens para me mostrar
+    - Quais são as receitas que tens para me dar
+    - Quais são as receitas que tens para me ensinar
+    - Quais são as receitas que tens para me ajudar
+    - Quais são as receitas que tens para me indicar
+    - Quais são as receitas que tens para me recomendar
+    - Quais são as receitas que tens para me oferecer
+    - Quais são as receitas que tens para me apresentar
+    - Quais são as receitas que tens para me sugerir
+    - Quais são as receitas que tens para me mostrar
+    - Quais são as receitas que tens para me dar
+    - Quais são as receitas que tens para me ensinar
+    - Quais são as receitas que tens para me ajudar
+    - Quais são as receitas que tens para me indicar
+    - Quais são as receitas que tens para me recomendar
+
+# Ask for the tools
+- intent: ask_for_tools
+  examples: |
+    - Mostra-me os utensílios precisos
+    - Quais são os utensílios necessários para esta receita
+    - Quais são os utensílios necessários
+    - Quais são os utensílios que preciso
+    - Quais são os utensílios que preciso para esta receita
+    - Quais são os utensílios que preciso para fazer esta receita
+    - Quais são os utensílios que preciso para fazer esta receita
+    - Mostre-me os utensílios necessários
+    - Mostre-me os utensílios necessários para esta receita
+    - Mostre-me os utensílios que preciso
+    - Mostre-me os utensílios que preciso para esta receita
+    - Mostre-me os utensílios que preciso para fazer esta receita
+    - Mostre-me os utensílios que preciso para fazer esta receita
+
+# Ask for the ingredients
+- intent: ask_for_ingredients
+  examples: |
+    - Mostra-me os ingredientes
+    - Quais são os ingredientes necessários para esta receita
+    - Quais são os ingredientes necessários
+    - Quais são os ingredientes que preciso
+    - Quais são os ingredientes que preciso para esta receita
+    - Quais são os ingredientes que preciso para fazer esta receita
+    - Mostra-me os ingredientes necessários
+    - Mostra-me os ingredientes necessários para esta receita
+    - Mostra-me os ingredientes que preciso
+    - Mostra-me os ingredientes que preciso para esta receita
+    - Mostra-me os ingredientes que preciso para fazer esta receita
+    - Mostre-me os ingredientes necessários
+    - Mostre-me os ingredientes necessários para esta receita
+    - Mostre-me os ingredientes que preciso
+    - Mostre-me os ingredientes que preciso para esta receita
+    
+# Ask for a SPECIFIC RECIPE [recipe_tag](receita)
+- intent: ask_specific_recipe
+  examples: |
+    - Quero uma receita de [bacalhau](receita)
+    - Quero 1 receita de [lasanha](receita)
+    - Hoje quero fazer uma receita de [lasanha](receita)
+    - Hoje quero fazer 1 receita de [lasanha](receita)
+    - Quero fazer uma receita de [pasta](receita)
+    - Quero fazer 1 receita de [bolo](receita)
+    - Mostra-me uma receita de [peixe](receita)
+    - Mostra-me 1 receita de [carne](receita)
+    - Dá-me uma receita de [bacalhau](receita)
+    - Dá-me 1 receita de [bacalhau](receita)
+- regex: receita
+  examples: |
+    - (?<=de\s)(\S+(?:\s+\S+)*)
+
+# Ask for help
+- intent: ask_help
+  examples: |
+    - Ajuda
+    - Mostra-me os comandos
+    - Como posso usar
+    - Como posso usar o assistente
+    - Podes ajudar
+    - Quais são os comandos disponíveis
+    - Como Funciona
+    - Podes-me ajudar
+    - O que consegues fazer
+    - O que sabes fazer
+    - O que sabes
+
+# Ask for a RANDOM RECIPE
+- intent: ask_random_recipe
+  examples: |
+    - Gostaria de uma sugestão de receita
+    - Gostaria de 1 sugestão de receita
+    - Podes-me fazer uma sugestão de receita
+    - Podes-me fazer 1 sugestão de receita
+    - Podes-me sugerir uma receita
+    - Podes-me sugerir 1 receita
+    - Quero uma sugestão de receita
+    - Quero 1 sugestão de receita
+    - Quero uma sugestão
+    - Quero 1 sugestão
+    - Sugere-me uma receita
+    - Sugere-me 1 receita
+    - sugere-me algo
+
+# Ask for REPETE THE STEP (Assuming that we know what step we are)
+- intent: ask_repeat_step
+  examples: |
+    - Repete por favor
+    - Podes repetir
+    - Não percebi, podes repetir
+    - Não compreendi, repete por favor
+    - Podes, por favor, repetir
+    - Repete o último passo por favor
+    - Seria possivel repetir
+    - Não ouvi, podes repetir
+  #  - [Repete](passo), por favor
+  #  - Podes [repete](passo) anterior?
+  #  - Não te importas de [repete](passo) anterior?
+  #  - Não te importas de [repete](passo) o último passo?
+  #  - Não entendi, podes [repete](passo)?
+  #  - Não compreendi, [repete](passo) por favor
+  #  - Podes, por favor, [repete](passo) último passo?
+  #  - [Repete](passo) o último passo por favor
+  #  - Seria possivel [repete](passo)?
+  #  - Não ouvi, podes [repete](passo)?
+
+# Ask to SHOW THE FIRST STEP
+- intent: ask_first_step
+  examples: |
+    - Mostra-me o primeiro passo
+    - Vamos começar com a receita
+    - Let's go
+    - vamos começar a cozinhar
+    - Quero começar
+    - Quero começar a cozinhar
+    - Quero começar a fazer a receita
+    - Vale, vamos começar
+    - Vamos lá
+
+# Ask to go to the NEXT STEP
+- intent: ask_next_step
+  examples: |
+    - Avança para o próximo passo
+    - Podes avançar
+    - Acabei este passo dá-me o próximo
+    - Passa para o próximo passo
+    - Quero avançar
+    - Quero o próximo passo
+    - Quero o passo seguinte
+    - Já fiz este passo, quero o próximo
+    - Já fiz este passo, quero avançar
+    - Já está
+    - Já fiz
+    - Pronto
+    - Feito
+    - Avança
+    - Done
+  #  - Avança [passo](avanca) por favor
+  #  - Podes [passo](avanca)
+  #  - Comprendi, podes [passo](avanca)
+  #  - Parece-me bem, podes [passo](avanca)
+  #  - Certo, podes [passo](avanca)
+  #  - Feito, podes [passo](avanca)
+
+
+# ---------------------------------------------------------------------------------------------- [PANTRY]
+# lookup table for the entity "unidade"
+- lookup: unidade
+  examples: |
+    - l
+    - ml
+    - cl
+    - dl
+    - g
+    - kg
+    - mg
+    - uni
+    - lata
+    - colher de sopa
+    - colher de chá
+    - copo
+    - garrafa
+    - tablete
+    - pacote
+    - cápsula
+    - saqueta
+    - dente
+    - folha
+    - ramo
+    - talo
+
+# regex to extract the unit of the ingredient    
+- regex: quantidade 
+  examples: |
+    - [0-9]+
+
+#regex: unidade
+- regex: number
+  examples: |
+    - [0-9]+
+
+# regex to extract the ingredient name
+- regex: ingrediente 
+  examples: |
+    - (?<=de\s)(\S+(?:\s+\S+)*?)(?=\s(?:à|na|da)\ despensa)
+#    - ((?:\b\w+\b\s?)+)(?=\sà\sdespensa)
+
+# regex to extract the expiration date - simplistic way only validating the number of digits
+- regex: data
+  examples: |
+    - \d{1,2}/\d{1,2}\s\d{4}
+    - \d{1,2}/\d{1,2}/\d{4}
+    - \d{1,2}\sde\s(?:Janeiro|Fevereiro|Março|Abril|Maio|Junho|Julho|Agosto|Setembro|Outubro|Novembro|Dezembro)\sde\s\d{4}
+
+# Ask for ingredients on the pantry
+- intent: ask_pantry
+  examples: |
+    - O que tenho na despensa
+    - O que tenho para cozinhar
+    - O que tenho para fazer 1 receita
+    - O que tenho para fazer uma receita
+    - Mostra-me o que tenho na despensa
+    - Mostra-me o que tenho para cozinhar
+    - Mostra-me o que tenho para fazer uma receita
+    - Mostra-me o que tenho para fazer 1 receita
+    - Quais são os ingredientes que tenho
+    - Quais são os ingredientes que tenho na despensa
+    - Quais são os ingredientes que tenho para cozinhar
+    - Quais são os ingredientes que tenho para fazer uma receita
+    - Quais são os ingredientes que tenho para fazer 1 receita
+    - Diz-me o que tenho na despensa
+    - Diz-me o que tenho para cozinhar
+    - Diz-me o que tenho para fazer uma receita
+    - Diz-me o que tenho para fazer 1 receita
+
+# Add ingredients to the pantry
+- intent: add_pantry
+  examples: |
+    - Adiciona [3](quantidade) [ovos](ingrediente) à despensa
+    - Adiciona [2](quantidade) [kilos](unidade) de [peitos de frango](ingrediente) à despensa
+    - Adiciona [1](quantidade) [cebola](ingrediente) à despensa
+    - Adiciona [250](quantidade) [gramas](unidade) de [açúcar](ingrediente) à despensa
+    - Adiciona [1](quantidade) [litro](unidade) de [leite](ingrediente) à despensa
+    - Adiciona [1](quantidade) [alface](ingrediente) à despensa
+    - Comprei [ovos](ingrediente)
+    - Comprei [3](quantidade) [kilos](unidade) de [peitos de frango](ingrediente)
+    - Trouxe [peitos de frango](ingrediente) do supermercado
+    - Trouxe [3](quantidade) [kilos](unidade) de [peitos de frango](ingrediente) do supermercado
+    - Acrescenta [3](quantidade) [ovos](ingrediente) à despensa
+    - Acrescenta [2](quantidade) [kilos](unidade) de [peitos de frango](ingrediente) à despensa
+
+#- regex: quantidade
+#  examples: |
+#    - [0-9]+
+#- regex: ingrediente
+#  examples: |
+#    - (?<=de\s)(\S+(?:\s+\S+)*?)(?=\sà\ despensa)
+
+
+#Add ingredients to the pantry by scanning the barcode
+- intent: add_pantry_barcode
+  examples: |
+    - Lê o código de barras e adiciona à despensa
+    - Lê o código de barras deste produto
+    - Passa este produto
+    - Adiciona este produto à despensa
+    - Acrescenta este produto à despensa
+
+# remove ingredients from the pantry by scanning the barcode
+- intent: remove_pantry_barcode
+  examples: |
+    - Lê o código de barras e remove da despensa
+    - Lê o código de barras deste produto e remove da despensa
+    - Passa este produto e remove da despensa
+    - Remove este produto da despensa
+    - Retira este produto da despensa
+
+# Remove ingredients from the pantry
+- intent: remove_pantry
+  examples: |
+    - Remove [3](quantidade) [ovos](ingrediente) da despensa
+    - Remove [2](quantidade) [kilos](unidade) de [peitos de frango](ingrediente) da despensa
+    - Remove [1](quantidade) [cebola](ingrediente) da despensa
+    - Remove [250](quantidade) [gramas](unidade) de [açúcar](ingrediente) da despensa
+    - Remove [1](quantidade) [ml](unidade) de [leite](ingrediente) da despensa
+    - Remove [1](quantidade) [alface](ingrediente) da despensa
+    - Usei [3](quantidade) [ovos](ingrediente)
+    - Usei [2](quantidade) [kilos](unidade) de [peitos de frango](ingrediente)
+    - Usei [1](quantidade) [cebola](ingrediente)
+    - Usei [250](quantidade) [gramas](unidade) de [açúcar](ingrediente)
+    - Usei [1](quantidade) [litro](unidade) de [leite](ingrediente)
+    - Usei [1](quantidade) [alface](ingrediente)
+    - Comi [3](quantidade) [ovos](ingrediente)
+    - Comi [2](quantidade) [kilos](unidade) de [peitos de frango](ingrediente)
+    - Comi [1](quantidade) [cebola](ingrediente)
+    - Comi [250](quantidade) [gramas](unidade) de [açúcar](ingrediente)
+    - Comi [3](quantidade) [maçãs](ingrediente)
+    - Retira [3](quantidade) [ovos](ingrediente) da despensa
+    - Retira [2](quantidade) [kilos](unidade) de [peitos de frango](ingrediente) da despensa
+
+
+# Remove all ingredients from the pantry
+- intent: remove_all_pantry
+  examples: |
+    - Remove todos os ingredientes da despensa
+    - Limpa a despensa
+    - Usei todos os [ovos](ingrediente)
+    - Gastei todos os [peitos de frango](ingrediente)
+    - Comi todas as [cebolas](ingrediente)
+    - Usei o [açúcar](ingrediente) todo
+    - Usei todo o [leite](ingrediente)
+    - Comi toda a [alface](ingrediente)
+    - Usei as [maçãs](ingrediente) todas
+    - Usei a [alface](ingrediente) toda
+    - Acabei com a [alface](ingrediente) toda
+    - Acabei com o [leite](ingrediente) todo
+
+# Remove all ingredients from the GROCERY LIST
+- intent: remove_all_shopping_list
+  examples: |
+    - Remove todos os ingredientes da lista de compras
+    - Limpa a lista de compras
+    - Fui ao supermercado e comprei tudo o que faltava
+    - Comprei tudo o que faltava
+    - Comprei tudo o que estava na lista de compras
+    - Comprei tudo o que estava na lista
+    - Comprei tudo o que estava na lista de compras
+
+# add ingredients to the shopping list
+- intent: add_shopping_list
+  examples: |
+    - Adiciona [ovos](ingrediente) à lista de compras
+    - Adiciona [peitos de frango](ingrediente) à lista de compras
+    - Acrescenta na lista de compras [cebola](ingrediente)
+    - Coloca [peitos de frango](ingrediente) na lista de compras
+
+
+# add ingridiente que não temos para fazer uma receita à lista de compras
+#- intent: add_recipe_ingredients_pantry
+#  examples: |
+#    - Adiciona os ingredientes que faltam à lista de compras
+#    - Adiciona os ingredientes que faltam para a receita à lista de compras
+#    - Adiciona os ingredientes que faltam para fazer a receita à lista de compras
+#    - Adiciona o que não temos à lista de compras
+#    - Adiciona o que falta à lista de compras
+#    - Adiciona o que falta para a receita à lista de compras
+#    - Adiciona o que falta para fazer a receita à lista de compras
+
+# Ask for the shopping list
+- intent: ask_shopping_list
+  examples: |
+    - O que tenho na lista de compras
+    - O que tenho para comprar
+    - O que tenho para fazer a receita
+    - Mostra-me o que tenho na lista de compras
+    - Mostra-me o que tenho para comprar
+    - Mostra-me o que tenho para fazer a receita
+    - Quais são os ingredientes que tenho na lista de compras
+    - Quais são os ingredientes que tenho para comprar
+    - Quais são os ingredientes que tenho para fazer a receita
+    - Diz-me o que tenho na lista de compras
+    - Diz-me o que tenho para comprar
+    - Diz-me o que tenho para fazer a receita 
+    - Mostra-me a lista de compras
+
+# send the shopping list to the email
+- intent: send_shopping_list
+  examples: |
+    - Envia a lista de compras para o meu email
+    - Envia a lista de compras para o email
+    - Envia a lista de compras para o meu email por favor
+    - Envia a lista de compras para o email por favor
+    - Envia a lista de compras para o meu email, por favor
+    - Envia a lista de compras para o email, por favor
+    - Envia a lista de compras para o meu email, por favor
+    - Envia-me a lista de compras para o email
+    
+# check if a ingredient is in the pantry
+- intent: ask_specific_pantry
+  examples: |
+    - Tenho [ovos](ingrediente) na despensa
+    - Tenho [ovos](ingrediente)
+    - Confirma se tenho [ovos](ingrediente)
+    - Confirma se tenho [ovos](ingrediente) na despensa
+    - Verifica se tenho [ovos](ingrediente)
+    - Verifica se tenho [ovos](ingrediente) na despensa
+    - Quantos [ovos](ingrediente) tenho
+    - Quantas [alfaces](ingrediente) tenho
+    - Há [ovos](ingrediente) na despensa
+    - Existem [ovos](ingrediente) na despensa
+
+# ---------------------------------------------------------------------------------------------- [COMMON]
+# get quantity of an ingredient
+- intent : get_quantity_ingredient
+  examples: |
+    - Tenho [3](quantidade) [ovos](ingrediente)
+    - [2](quantidade) [kilos](unidade)
+    - [1](quantidade) [cebola](ingrediente)
+    - [250](quantidade) [gramas](unidade)
+
+# get expiration date of an ingredient
+- intent : get_expiration_date
+  examples: |
+    - a data de validade é [12/12 2022](data)
+    - a data de validade é [12/12/2022](data)
+    - a data de validade é [21 de abril de 2024](data)
+    - [12/12 2022](data)
+    - [12/12/2022](data)
+    - [21 de abril de 2024](data)
+    - [12/12 2022](data) é a data de validade
+    - [12/12/2022](data) é a data de validade
+    - [21 de abril de 2024](data) é a data de validade
+    - a data de validade é [12/12 2022](data)
+    - a data de validade é [12/12/2022](data)
+    - a data de validade é [21 de abril de 2024](data)
+    - o fim da validade é [12/12 2025](data)
+    - o fim da validade é [12/12/2025](data)
+    - o fim da validade é [21 de abril de 2024](data)
+    - [12/12 2022](data) é o fim da validade
+    - [12/12/2022](data) é o fim da validade
+    - [21 de abril de 2024](data) é o fim da validade
+    - o prazo de validade é [12/12 2030](data)
+    - o prazo de validade é [12/12/2030](data)
+    - o prazo de validade é [21 de abril de 2024](data)
+    - [12/12 2022](data) é o prazo de validade
+    - [12/12/2022](data) é o prazo de validade
+    - [21 de abril de 2024](data) é o prazo de validade
+
+# Greet the assistant
+- intent: greet
+  examples: |
+    - oi Assistente
+    - bom dia, Assistente
+    - boa tarde, Assistente
+    - boa noite, Assistente
+    - viva
+    - olá
+    - boas
+    - oi
+    - viva, assistente
+    - saudações, assistente
+    - hey, assistente
+
+# Say goodbye to the assistant
+- intent: goodbye
+  examples: |
+    - xau, Assistente
+    - adeus, Assistente
+    - até logo, Assistente
+    - até amanhã, Assistente
+    - até breve, assistente
+    - até já, assistente
+    - até á próxima, assistente
+    - adeus
+    - xau
+
+- intent: affirm
+  examples: |
+   - sim
+   - claro
+   - parece-me bem
+   - correto
+   - okay
+   - ok
+   - sim
+   - certíssimo
+   - afirmativo
+
+- intent: deny
+  examples: |
+    - não
+    - nope
+    - nunca
+    - acho que não
+    - não gosto assim
+    - nem por isso
+
+- intent: joke
+  examples: |
+    - Conta-me uma piada
+    - Conta-ma 1 piada
+    - Diz-me uma piada
+    - Diz-me 1 piada
+    - Podes contar-me uma piada
+    - Podes contar-me 1 piada
+    - Conta-me uma anedota
+    - Conta-me 1 anedota
+    - Diz-me uma anedota
+    - Diz-me 1 anedota
+    - Podes contar-me uma anedota
+    - Podes contar-me 1 anedota
+    - Conta-me uma piada, por favor
+    - Conta-me 1 piada, por favor
+    - Diz-me uma piada, por favor
+    - Diz-me 1 piada, por favor
+    - Podes contar-me uma piada, por favor
+    - Podes contar-me 1 piada, por favor
+    - Conta-me uma anedota, por favor
+    - Conta-me 1 anedota, por favor
+    - Diz-me uma anedota, por favor
+    - Diz-me 1 anedota, por favor
+    - Podes contar-me uma anedota, por favor
+    - Podes contar-me 1 anedota, por favor
+
+
+#Avaliador
+
+# # Feedback framework
+# - intent: give_feedback
+#   examples: |
+#     - O assistente foi útil
+#     - O assistente foi inútil
+#     - O assistente foi muito útil
+#     - O assistente foi pouco útil
+#     - A resposta do assistente foi rápida
+#     - A resposta do assistente foi lenta
+#     - A resposta do assistente foi muito rápida
+#     - A resposta do assistente foi muito lenta
+#     - O assistente foi eficiente
+#     - O assistente foi ineficiente
+#     - Sim
+#     - Não
+#     - 1
+#     - 2
+#     - 3
+#     - 4
+#     - 5      
+
+  #feedback scale 0-5
+- intent: scale_feedback
+  examples: |
+    - [0](number)
+    - [1](number)
+    - [2](number)
+    - [3](number)
+    - [4](number)
+    - [5](number)
+  
+#   #positive feedback
+# - intent: positive_feedback
+#   examples: |
+#     - O assistente foi útil
+#     - O assistente foi muito útil
+#     - A resposta do assistente foi rápida
+#     - A resposta do assistente foi eficiente
+#     - O assistente foi eficiente
+#     - O assistente foi muito eficiente
+#     - A resposta do assistente foi rápida e eficiente
+#     - O assistente foi rápido e eficiente
+#     - O assistente foi rápido e útil
+#     - O assistente foi muito rápido e útil
+
+#   #negative feedback
+# - intent: negative_feedback 
+#   examples: |
+#     - O assistente foi inútil
+#     - O assistente foi pouco útil
+#     - A resposta do assistente foi lenta
+#     - A resposta do assistente foi ineficiente
+#     - O assistente foi ineficiente
+#     - O assistente foi muito ineficiente
+#     - A resposta do assistente foi lenta e ineficiente
+#     - O assistente foi lento e ineficiente
+#     - O assistente foi lento e inútil
+#     - O assistente foi muito lento e inútil 
+
+#   #compreender o assistente
+# - intent: understand_assistant
+#   examples: |
+#     - Compreendi
+#     - Não compreendi
+#     - Entendi
+#     - Não entendi
+#     - Percebi
+#     - Não percebi
+#     - Compreendi o que disseste
+#     - Não compreendi o que disseste
+#     - Entendi o que disseste
+#     - Não entendi o que disseste
+#     - Percebi o que disseste
+#     - Não percebi o que disseste
+#     - Compreendi o que disseste, assistente
+#     - Não compreendi o que disseste, assistente
+#     - Entendi o que disseste, assistente
+#     - Não entendi o que disseste, assistente
+#     - Percebi o que disseste, assistente
+#     - Não percebi o que disseste, assistente
+
+#   #utilidade do assistente nas suas tarefas("Com que frequência o assistente é útil nas suas tarefas?")
+# - intent: usefulness_assistant
+#   examples: |
+#     - Sempre
+#     - Frequentemente
+#     - Ocasionalmente
+#     - Às vezes
+#     - Raramente
+#     - Quase nunca
+#     - Nunca
+#     - Sempre que preciso
+#     - Poucas vezes
+#     - Muitas vezes
+#   #O assistente acompanha bem/ tem interação fluida com o utilizador?
+# - intent: interaction_assistant
+#   examples: |
+#     - Sim, acompanha bem
+#     - Acompanha bem
+#     - Não, não acompanha bem
+#     - Não acompanha bem
+#     - Não acompanha bem
+#     - Às vezes perde o contexto
+#     - Confunde-se várias vezes
+#     - Não entende o contexto
+#     - Não compreende o contexto
+
+#   #Frequência de completude de interações("Com que frequência consegue completar uma interação com o assistente?")
+# - intent: completion_assistant
+#   examples: |
+#     - Sempre
+#     - Frequentemente
+#     - Ocasionalmente
+#     - Às vezes
+#     - Raramente
+#     - Quase nunca
+#     - Nunca
+#     - Sempre que preciso
+#     - Poucas vezes
+#     - Muitas vezes  
+
+
+# - intent: confidence_assistant
+#   examples: |
+#     -  Confio
+#     -  Não confio
+#     -  Confio no assistente
+#     -  Não confio no assistente
+#     -  Sim, confio
+#     -  Não, não confio
+#     -  Confio muito
+#     -  Não confio muito
+#     -  Confio pouco
+#     -  Confio nada
+#     -  Não confio nada
+#     -  Confio mais ou menos
+#     -  Confio às vezes
+    
+- intent: score_5
+  examples: |
+    - O assistente foi muito útil
+    - O assistente foi muito eficiente
+    - O assistente foi muito rápido e útil
+    - O assistente foi rápido e eficiente
+    - A resposta do assistente foi rápida e eficiente
+    - Sempre
+    - Sempre que preciso
+    - Confio muito
+    - Sim, confio
+    - Estou muito satisfeito com a ajuda do assistente
+    - A interação foi perfeita
+    - Tudo correu muito bem
+    - Foi exatamente o que eu precisava
+    - Funcionou perfeitamente
+    - Ajudou imenso, obrigado
+    - A resposta foi excelente
+    - Foi extremamente útil
+    - Correu de forma impecável
+    - O assistente entendeu tudo corretamente
+    - A conversa foi fluida e clara
+
+
+- intent: score_4
+  examples: |
+    - O assistente foi útil
+    - A resposta do assistente foi rápida
+    - O assistente foi eficiente
+    - Muitas vezes
+    - Frequentemente
+    - Confio no assistente
+    - Confio
+    - Ajudou-me com o que eu precisava
+    - Foi uma boa resposta
+    - Foi quase perfeito
+    - Ajudou, apesar de alguma confusão
+    - A maior parte da resposta foi boa
+    - A conversa correu bem
+    - Ajudou bastante
+    - A maioria das vezes funciona bem
+    - Normalmente funciona como espero
+    - O assistente respondeu de forma satisfatória
+    - Em geral, foi positivo
+    - Foi claro e útil
+    - Teve pequenos erros, mas ajudou
+
+
+- intent: score_3
+  examples: |
+    - Às vezes
+    - Ocasionalmente
+    - Confio mais ou menos
+    - Confio às vezes
+    - Acompanha bem
+    - Às vezes perde o contexto
+    - Entendi
+    - Percebi
+    - Ajudou, mas podia ser melhor
+    - Nem sempre responde como espero
+    - A resposta foi razoável
+    - Pode melhorar em alguns pontos
+    - Às vezes é confuso
+    - A interação é ok, mas falta clareza
+    - Responde parcialmente ao que pergunto
+    - É útil na maior parte do tempo
+    - Já vi melhores respostas
+    - Às vezes responde corretamente
+    - Não é perfeito, mas ajuda
+    - Algumas respostas foram corretas
+
+
+- intent: score_2
+  examples: |
+    - Poucas vezes
+    - Raramente
+    - Não confio muito
+    - Confio pouco
+    - Não compreende o contexto
+    - Confunde-se várias vezes
+    - Não acompanha bem
+    - A resposta não foi muito clara
+    - Muitas vezes não entendo a resposta
+    - Ajudou pouco
+    - Responde com atraso
+    - Faltou precisão nas respostas
+    - Muitas vezes confuso
+    - A interação não foi satisfatória
+    - Não me ajudou como esperava
+    - A resposta estava incompleta
+    - Não entendi direito
+    - Não foi muito útil
+    - Precisa melhorar bastante
+    - As respostas foram vagas
+
+
+- intent: score_1
+  examples: |
+    - Quase nunca
+    - O assistente foi pouco útil
+    - O assistente foi inútil
+    - A resposta do assistente foi lenta
+    - O assistente foi ineficiente
+    - Não confio
+    - Não, não confio
+    - Responde de forma errada frequentemente
+    - Ajudou muito pouco
+    - A interação foi frustrante
+    - As respostas não fizeram sentido
+    - Muitas vezes não entendi nada
+    - Não é confiável
+    - As respostas demoraram muito
+    - Faltou clareza total
+    - A experiência foi decepcionante
+    - Ajudou muito pouco ou nada
+    - Não atendeu às minhas expectativas
+    - Errou várias vezes
+    - O assistente não respondeu corretamente
+
+
+- intent: score_0
+  examples: |
+    - Nunca
+    - O assistente foi muito lento e inútil
+    - O assistente foi muito ineficiente
+    - Não confio nada
+    - Confio nada
+    - Não entendi
+    - Não percebi
+    - Não compreendi
+    - Totalmente inútil
+    - Pior do que esperado
+    - Não serviu para nada
+    - Foi um desastre
+    - Totalmente frustrado
+    - Não responde nada correto
+    - Nunca mais uso
+    - Não ajuda em nada
+    - A experiência foi horrível
+    - Sem nenhuma utilidade
+    - Péssima resposta
+    - Completamente ineficaz
+
+
+#   #ask for help
+# - intent: ask_for_help
+#   examples: |
+#     - Ajuda
+#     - Ajuda, assistente
+#     - Podes ajudar-me
+#     - Podes ajudar-me, assistente
+#     - Podes ajudar-me, por favor
+#     - Podes ajudar-me, assistente, por favor
+#     - Podes ajudar-me, por favor, assistente
+#     - Podes ajudar-me, por favor, assistente?
+#     - Podes ajudar-me, assistente?
+#     - Podes ajudar-me?

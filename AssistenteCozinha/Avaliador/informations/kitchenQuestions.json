@@ -1,0 +1,269 @@
+{
+  "ask_help": {
+    "yes_no_questions": [
+      "O assistente foi claro ao explicar as funcionalidades?",
+      "As instruções fornecidas pelo assistente foram úteis?",
+      "Acha que os comandos apresentados lhe foram úteis?",
+      "Acha que os comandos disponibilizados foram suficientes para as suas questões?",
+      "Conseguiu perceber o que cada comando faz?",
+      "Considera que os comandos estão bem descritos?",
+      "Os exemplos de comandos foram úteis?",
+      "Toda a informação crítica foi apresentada na ajuda?"
+    ],
+    "scale_questions": [
+      "Numa escala de 1 a 5 o quão explícitas achou as instruções?",
+      "Numa escala de 1 a 5 o quão esclarecedor foi o assistente ao explicar as funcionalidades?",
+      "Numa escala de 1 a 5, o quão úteis foram os comandos apresentados?",
+      "Numa escala de 1 a 5, em que medida os comandos disponibilizados atenderam às suas necessidades?",
+      "Numa escala de 1 a 5, que número atribuiria em relação ao seu entendimento sobre o que cada comando faz?",
+      "Numa escala de 1 a 5, o quão bem descritos estavam os comandos?"
+    ]
+  },
+  "ask_repeat_step": {
+    "yes_no_questions": [
+      "Quando pediu para repetir um passo, o assistente respondeu corretamente?",
+      "A repetição do passo foi clara e fácil de entender?",
+      "Todas as informações importantes estavam presentes no passo repetido?",
+      "Sentiu-se satisfeito com a forma como o assistente repetiu um passo?",
+      "Quando pediu para repetir um passo, o assistente respondeu corretamente?",
+      "O assistente repetiu o passo corretamente?",
+      "A repetição incluiu todos os detalhes necessários?",
+      "Já houve confusão ao repetir (ex: passo errado)?"
+    ],
+    "scale_questions": [
+      "Numa escala de 1 a 5, o quão corretamente o assistente respondeu quando você pediu para repetir um passo?",
+      "Numa escala de 1 a 5, o quão clara e fácil de entender foi a repetição do passo feita pelo assistente?",
+      "Numa escala de 1 a 5, em que medida todas as informações importantes estavam presentes na repetição do passo?",
+      "Numa escala de 1 a 5, o quanto você ficou satisfeito com a forma como o assistente repetiu um passo?"
+    ]
+  },
+  "ask_random_recipe": {
+    "yes_no_questions": [
+      "O assistente tem-lhe apresentado receitas do seu agrado?",
+      "Está satisfeito com a variabilidade de receitas oferecidas pelo assistente ?",
+      "Usaria novamente a funçao de pedir uma receita aleatória?",
+      "Considera que a qualidade das receitas apresentadas pelo assistente é adequada?",
+      "A receita sugerida foi relevante para o seu perfil?",
+      "Gostaria de filtrar por tipo (ex: 'sem glúten')?"
+    ],
+    "scale_questions": [
+      "Numa escala de 1 a 5, o quanto as receitas apresentadas pelo assistente foram do seu agrado?",
+      "Numa escala de 1 a 5, o quão satisfeito está com a variabilidade das receitas oferecidas pelo assistente?",
+      "Numa escala de 1 a 5, qual a probabilidade de você usar novamente a função de pedir uma receita aleatória?",
+      "Numa escala de 1 a 5, em que medida você considera que a qualidade das receitas apresentadas foi adequada?"
+    ]
+  },
+  "ask_specific_recipe": {
+    "yes_no_questions": [
+      "A receita apresentada corresponde ao tipo de prato que pediu?",
+      "A receita fornecida pelo assistente atendeu às suas expectativas?",
+      "Usaria novamente a funçao de pedir uma receita específica?",
+      "O assistente compreendeu corretamente o tipo de receita que solicitou?"
+    ],
+    "scale_questions": [
+      "Numa escala de 1 a 5, o quanto a receita apresentada correspondeu ao tipo de prato que você pediu?",
+      "Numa escala de 1 a 5, o quanto a receita fornecida atendeu às suas expectativas?",
+      "Numa escala de 1 a 5, qual a probabilidade de você usar novamente a função de pedir uma receita específica?",
+      "Numa escala de 1 a 5, o quanto o assistente compreendeu corretamente o tipo de receita que você solicitou?"
+    ]
+  },
+  "add_pantry": {
+    "yes_no_questions": [
+      "Foi fácil fazer o assistente entender que queria adicionar algo à despensa?",
+      "Conseguiu adicionar itens com quantidades específicas (ex: 2 tomates, 1 kg de arroz)?",
+      "A funcionalidade da despensa é útil no seu dia a dia?",
+      "Nunca sentiu frustração ao tentar usar a despensa?",
+      "Sente que a funcionalidade de despensa é fácil de usar?",
+      "O assistente entendeu corretamente itens com unidades (ex: '1 litro de leite')?",
+      "Houve confusão com ingredientes compostos (ex: 'peito de frango')?"
+    ],
+    "scale_questions": []
+  },
+  "remove_pantry": {
+    "yes_no_questions": [
+      "Foi fácil fazer o assistente entender que queria remover algo da despensa?",
+      "Conseguiu remover itens com quantidades específicas (ex: 2 tomates, 1 kg de arroz)?",
+      "A funcionalidade da despensa é útil no seu dia a dia?",
+      "Nunca sentiu frustração ao tentar usar a despensa?",
+      "Sente que a funcionalidade de despensa é fácil de usar?",
+      "O assistente removeu as quantidades corretas?",
+      "Houve erros ao interpretar pedidos (ex: 'usei metade')?"
+    ],
+    "scale_questions": []
+  },
+  "remove_all_pantry": {
+    "yes_no_questions": ["Conseguiu remover todos os itens da despensa?"],
+    "scale_questions": []
+  },
+  "ask_pantry": {
+    "yes_no_questions": [
+      "O assistenten compreendeu corretamente a sua pergunta?",
+      "A resposta do assistente foi clara e fácil de entender?",
+      "A lista da despensa foi exibida de forma organizada?",
+      "Faltou alguma informação (ex: quantidades ou validade)?"
+    ],
+    "scale_questions": []
+  },
+  "ask_specific_pantry": "low_priority",
+
+  "add_shopping_list": {
+    "yes_no_questions": [
+      "Foi fácil fazer o assistente entender que queria adicionar algo à lista?",
+      "Conseguiu adicionar itens com quantidades específicas (ex: 2 tomates, 1 kg de arroz)?",
+      "A funcionalidade da lista de compras é útil no seu dia a dia?",
+      "Nunca sentiu frustração ao tentar usar a lista de compras?",
+      "Sente que a funcionalidade de lista de compras é fácil de usar?"
+    ],
+    "scale_questions": [
+      "Numa escala de 1 a 5, o quanto foi fácil fazer o assistente entender que queria adicionar algo à lista?",
+      "Numa escala de 1 a 5, o quanto foi fácil adicionar itens com quantidades específicas (ex: 2 tomates, 1 kg de arroz)?",
+      "Numa escala de 1 a 5, o quanto a funcionalidade da lista de compras é útil no seu dia a dia?",
+      "Numa escala de 1 a 5, o quanto você ficou confortável ao usar a lista de compras? (1 = nada confortável, 5 = muito confortável)",
+      "Numa escala de 1 a 5, o quanto você considera fácil de usar a funcionalidade de lista de compras?"
+    ]
+  },
+  "ask_shopping_list": {
+    "yes_no_questions": [
+      "A apresentação da lista foi clara e fácil de entender?",
+      "A funcionalidade da lista de compras é útil no seu dia a dia?",
+      "Nunca sentiu frustração ao tentar usar a lista de compras?",
+      "Sente que a funcionalidade de lista de compras é fácil de usar?",
+      "Itens repetidos ou ausentes foram um problema?"
+    ],
+    "scale_questions": [
+      "Numa escala de 1 a 5, o quão clara e fácil de entender foi a apresentação da lista de compras?",
+      "Numa escala de 1 a 5, o quanto a funcionalidade da lista de compras é útil no seu dia a dia?",
+      "Numa escala de 1 a 5, o quanto você ficou confortável ao usar a lista de compras? (1 = nada confortável, 5 = muito confortável)",
+      "Numa escala de 1 a 5, o quanto você considera fácil de usar a funcionalidade de lista de compras? "
+    ]
+  },
+  "remove_all_shopping_list": {
+    "yes_no_questions": [
+      "A funcionalidade da lista de compras é útil no seu dia a dia?",
+      "Nunca sentiu frustração ao tentar usar a lista de compras?",
+      "Sente que a funcionalidade de lista de compras é fácil de usar?",
+      "A lista de compras foi limpa corretamente?"
+    ],
+    "scale_questions": [
+      "Numa escala de 1 a 5, o quanto a funcionalidade da lista de compras é útil no seu dia a dia? ",
+      "Numa escala de 1 a 5, o quanto você ficou confortável ao usar a lista de compras? (1 = nada confortável, 5 = muito confortável)",
+      "Numa escala de 1 a 5, o quanto você considera fácil de usar a funcionalidade de lista de compras?"
+    ]
+  },
+  "send_shopping_list": {
+    "yes_no_questions": [
+      "O conteúdo do e-mail estava claro e continha todos os itens?",
+      "O e-mail recebido continha todos os itens corretos?",
+      "O formato do e-mail foi claro (ex: divisão por categorias)?"
+    ],
+    "scale_questions": []
+  },
+  "ask_all_recipes": {
+    "yes_no_questions": [
+      "A lista de receitas foi organizada de uma maneira que facilitou sua escolha?",
+      "O assistente forneceu uma quantidade adequada de informações sobre cada receita na lista?",
+      "A lista de receitas foi organizada de forma clara e útil?",
+      "O assistente apresentou opções variadas e relevantes?",
+      "Faltou algum tipo de receita que esperava ver na lista?"
+    ],
+    "scale_questions": [
+      "Numa escala de 1 a 5, o quanto a lista de receitas foi organizada de uma maneira que facilitou sua escolha? "
+    ]
+  },
+  "ask_next_step": {
+    "yes_no_questions": [
+      "O assistente foi claro ao explicar o próximo passo?",
+      "As instruções fornecidas pelo assistente foram úteis?",
+      "Acha que os comandos apresentados lhe foram úteis?",
+      "Acha que os comandos disponibilizados foram limitados para as suas questões?",
+      "Conseguiu perceber o que cada comando faz?",
+      "Considera que os comandos estão bem descritos?",
+      "O assistente avançou para o passo correto após seu comando?",
+      "As transições entre passos foram fluidas?"
+    ],
+    "scale_questions": [
+      "Numa escala de 1 a 5, o quanto o assistente foi claro ao explicar o próximo passo?",
+      "Numa escala de 1 a 5, o quanto as instruções fornecidas pelo assistente foram úteis?",
+      "Numa escala de 1 a 5, o quanto os comandos apresentados foram úteis para você?",
+      "Numa escala de 1 a 5, em que medida os comandos disponibilizados foram limitados para responder às suas questões?",
+      "Numa escala de 1 a 5, o quanto você conseguiu perceber o que cada comando faz?",
+      "Numa escala de 1 a 5, o quão bem descritos estavam os comandos?"
+    ]
+  },
+  "ask_first_step": {
+    "yes_no_questions": ["O primeiro passo foi explicado de forma clara?"],
+    "scale_questions": []
+  },
+    "ask_for_tools": {
+    "yes_no_questions": [
+      "Os utensílios listados correspondem aos necessários para a receita?",
+      "A lista de utensílios foi fácil de entender?",
+      "Sente falta de mais detalhes (ex: tamanho de panela)?"
+    ],
+    "scale_questions": []
+  },
+  "ask_for_ingredients": {
+    "yes_no_questions": [
+      "Os ingredientes listados estavam corretos para a receita?",
+      "As quantidades fornecidas foram claras (ex: gramas vs. colheres)?",
+      "Faltou algum ingrediente que deveria constar?"
+    ],
+    "scale_questions": []
+  },
+  "add_pantry_barcode": {
+    "yes_no_questions": [
+      "O assistente entendeu corretamente o código de barras?",
+      "A funcionalidade de adicionar por código de barras é útil?"
+    ],
+    "scale_questions": []
+  },
+  "remove_pantry_barcode": {
+    "yes_no_questions": [
+      "O assistente entendeu corretamente o código de barras?",
+      "A funcionalidade de remover por código de barras é útil?"
+    ],
+    "scale_questions": []
+  },
+  "get_quantity_ingredient": {
+    "yes_no_questions": [
+      "O assistente entendeu corretamente a quantidade pedida?",
+      "A funcionalidade de quantidade é útil?",
+      "Conseguiu adicionar itens com variações (ex: '3 maçãs verdes')?"
+    ],
+    "scale_questions": []
+  },
+  "get_expiration_date": {
+    "yes_no_questions": [
+      "O assistente registou corretamente formatos de data (ex: '12/05/2024')?",
+      "Lembretes de validade seriam úteis?"
+    ],
+    "scale_questions": []
+  },
+  "greet": {
+    "yes_no_questions": [
+      "Conseguiu compreender a saudação do assistente?",
+      "O assistente respondeu de forma natural aos cumprimentos?"
+    ],
+    "scale_questions": []
+  },
+  "goodbye": {
+    "yes_no_questions": ["A resposta de despedida foi adequada?"],
+    "scale_questions": []
+  },
+  "affirm": {
+    "yes_no_questions": [
+      "O assistente interpretou corretamente 'sim' em contextos críticos?"
+    ],
+    "scale_questions": []
+  },
+  "deny": {
+    "yes_no_questions": [
+      "O assistente interpretou corretamente 'não' em contextos críticos?"
+    ],
+    "scale_questions": []
+  },
+  "joke": {
+    "yes_no_questions": ["As piadas forma apropriadas e diversificadas?"],
+    "scale_questions": []
+  }
+}

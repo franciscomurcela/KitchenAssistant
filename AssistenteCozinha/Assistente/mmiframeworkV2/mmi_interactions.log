@@ -1,0 +1,1065 @@
+Starting Flask server...
+Starting Flask server...
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZh","nlu":{"intent":"greet","audioReconized":"Casa Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa Viva'}
+{"timestamp": "2025-03-11T00:01:23.667579", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZhIGNvbnRhLW1lIDEgcGlhZGE=","nlu":{"intent":"joke","audioReconized":"Casa Viva conta-me 1 piada"}}
+Extracted nlu: {'intent': 'joke', 'audioReconized': 'Casa Viva conta-me 1 piada'}
+{"timestamp": "2025-03-11T00:01:41.453209", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "joke", "audioReconized": "Casa Viva conta-me 1 piada"}}
+Extracted source: None
+Extracted target: None
+Extracted command: {"text":"mostra me o pau"}
+Extracted nlu: None
+{"timestamp": "2025-03-11T00:02:28.668986", "source": null, "target": null, "nlu": null}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZh","nlu":{"intent":"greet","audioReconized":"Casa Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa Viva'}
+{"timestamp": "2025-03-11T00:08:04.118205", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZhIGNoZWlyYQ==","nlu":{"intent":"greet","audioReconized":"Casa Viva cheira"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa Viva cheira'}
+{"timestamp": "2025-03-11T00:08:08.564361", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa Viva cheira"}}
+Starting Flask server...
+Starting Flask server...
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSB2aWdhIFBvZGVzIG1vc3RyYXIgMSByZWNlaXRh","nlu":{"intent":"ask_spefific_recipe","audioReconized":"Casa viga Podes mostrar 1 receita"}}
+Extracted nlu: {'intent': 'ask_spefific_recipe', 'audioReconized': 'Casa viga Podes mostrar 1 receita'}
+{"timestamp": "2025-03-11T15:20:54.222641", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "ask_spefific_recipe", "audioReconized": "Casa viga Podes mostrar 1 receita"}}
+Extracted source: None
+Extracted target: None
+Extracted command: {"text":"GREET ASSISTANT TO INICIATE"}
+Extracted nlu: None
+{"timestamp": "2025-03-11T15:20:54.269199", "source": null, "target": null, "nlu": null}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZh","nlu":{"intent":"greet","audioReconized":"Casa Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa Viva'}
+{"timestamp": "2025-03-11T15:21:20.646040", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZhIFBvZGVzIG1vc3RyYXIgMSByZWNlaXRh","nlu":{"intent":"ask_spefific_recipe","audioReconized":"Casa Viva Podes mostrar 1 receita"}}
+Extracted nlu: {'intent': 'ask_spefific_recipe', 'audioReconized': 'Casa Viva Podes mostrar 1 receita'}
+{"timestamp": "2025-03-11T15:21:24.380435", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "ask_spefific_recipe", "audioReconized": "Casa Viva Podes mostrar 1 receita"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBwb2RlcyBtb3N0cmFyIG9zIGluZ3JlZGllbnRlcyBxdWUgdGVt","nlu":{"intent":"ask_for_ingredients","audioReconized":"Casa podes mostrar os ingredientes que tem"}}
+Extracted nlu: {'intent': 'ask_for_ingredients', 'audioReconized': 'Casa podes mostrar os ingredientes que tem'}
+{"timestamp": "2025-03-11T15:21:33.728026", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "ask_for_ingredients", "audioReconized": "Casa podes mostrar os ingredientes que tem"}}
+Extracted source: None
+Extracted target: None
+Extracted command: {"text":"ola, podes me mostrar os ingredientes disponiveis?"}
+Extracted nlu: None
+{"timestamp": "2025-03-11T15:23:23.865449", "source": null, "target": null, "nlu": null}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"b2xhLCBwb2RlcyBtZSBtb3N0cmFyIG9zIGluZ3JlZGllbnRlcyBkaXNwb25pdmVpcz8=","nlu":{"intent":"ask_for_ingredients","audioReconized":"ola, podes me mostrar os ingredientes disponiveis?"}}
+Extracted nlu: {'intent': 'ask_for_ingredients', 'audioReconized': 'ola, podes me mostrar os ingredientes disponiveis?'}
+{"timestamp": "2025-03-11T15:23:23.912153", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "ask_for_ingredients", "audioReconized": "ola, podes me mostrar os ingredientes disponiveis?"}}
+Starting Flask server...
+Starting Flask server...
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZh","nlu":{"intent":"greet","audioReconized":"Casa Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa Viva'}
+{"timestamp": "2025-03-18T20:01:00.643860", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZh","nlu":{"intent":"greet","audioReconized":"Casa Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa Viva'}
+{"timestamp": "2025-03-18T20:01:23.077830", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q29udGEtbWUgMSBwaWFkYQ==","nlu":{"intent":"joke","audioReconized":"Conta-me 1 piada"}}
+Extracted nlu: {'intent': 'joke', 'audioReconized': 'Conta-me 1 piada'}
+{"timestamp": "2025-03-18T20:01:39.936325", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "joke", "audioReconized": "Conta-me 1 piada"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSB2aXZhIGNodXBhLW1lIG8gcMOpbmlz","nlu":{"intent":"greet","audioReconized":"Casa viva chupa-me o pénis"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa viva chupa-me o pénis'}
+{"timestamp": "2025-03-18T20:04:51.750941", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa viva chupa-me o p\u00e9nis"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"VHVkbyBwYXJhIG8gTWFycXXDqnM=","nlu":{"intent":"remove_all_shopping_list","audioReconized":"Tudo para o Marquês"}}
+Extracted nlu: {'intent': 'remove_all_shopping_list', 'audioReconized': 'Tudo para o Marquês'}
+{"timestamp": "2025-03-18T20:05:45.912697", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "remove_all_shopping_list", "audioReconized": "Tudo para o Marqu\u00eas"}}
+Starting Flask server...
+Starting Flask server...
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZh","nlu":{"intent":"greet","audioReconized":"Casa Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa Viva'}
+{"timestamp": "2025-03-18T20:13:56.326820", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T20:14:13.605838", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T20:14:21.778359", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T20:14:23.495100", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YSB2aXZh","nlu":{"intent":"greet","audioReconized":"Viva viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva viva'}
+{"timestamp": "2025-03-18T20:14:32.209559", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva viva"}}
+Starting Flask server...
+Starting Flask server...
+Starting Flask server...
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZh","nlu":{"intent":"greet","audioReconized":"Casa Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa Viva'}
+{"timestamp": "2025-03-18T20:19:51.753250", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZh","nlu":{"intent":"greet","audioReconized":"Casa Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa Viva'}
+{"timestamp": "2025-03-18T20:20:16.601112", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZh","nlu":{"intent":"greet","audioReconized":"Casa Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa Viva'}
+{"timestamp": "2025-03-18T20:20:18.666876", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZh","nlu":{"intent":"greet","audioReconized":"Casa Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa Viva'}
+{"timestamp": "2025-03-18T20:20:25.568733", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa Viva"}}
+Starting Flask server...
+Starting Flask server...
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZh","nlu":{"intent":"greet","audioReconized":"Casa Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa Viva'}
+{"timestamp": "2025-03-18T20:21:45.277334", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T20:21:47.472799", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T20:21:57.743530", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T20:22:06.297221", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T20:22:14.449060", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Starting Flask server...
+Starting Flask server...
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZh","nlu":{"intent":"greet","audioReconized":"Casa Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa Viva'}
+{"timestamp": "2025-03-18T20:28:35.654371", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YSB2aXZh","nlu":{"intent":"greet","audioReconized":"Viva viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva viva'}
+{"timestamp": "2025-03-18T20:28:42.626129", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva viva"}}
+Starting Flask server...
+Starting Flask server...
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T20:31:14.972953", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T20:31:23.335650", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T20:31:25.357506", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T20:31:29.498118", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T20:31:34.935508", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Starting Flask server...
+Starting Flask server...
+Starting Flask server...
+Starting Flask server...
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZh","nlu":{"intent":"greet","audioReconized":"Casa Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa Viva'}
+{"timestamp": "2025-03-18T20:36:59.536530", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YSB2aXZh","nlu":{"intent":"greet","audioReconized":"Viva viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva viva'}
+{"timestamp": "2025-03-18T20:37:09.935007", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva viva"}}
+Starting Flask server...
+Starting Flask server...
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T20:39:03.037582", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T20:39:07.344561", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YSB2aXZh","nlu":{"intent":"greet","audioReconized":"Viva viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva viva'}
+{"timestamp": "2025-03-18T20:39:19.587522", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva viva"}}
+Starting Flask server...
+Starting Flask server...
+Starting Flask server...
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T20:45:48.242023", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T20:45:51.836325", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T20:46:01.177594", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Starting Flask server...
+Starting Flask server...
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZh","nlu":{"intent":"greet","audioReconized":"Casa Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa Viva'}
+{"timestamp": "2025-03-18T21:58:46.909209", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZh","nlu":{"intent":"greet","audioReconized":"Casa Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa Viva'}
+{"timestamp": "2025-03-18T21:58:53.700300", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa Viva"}}
+Extracted source: None
+Extracted target: None
+Extracted command: {"text":"Casa VIva"}
+Extracted nlu: None
+{"timestamp": "2025-03-18T21:59:09.257165", "source": null, "target": null, "nlu": null}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWSXZh","nlu":{"intent":"greet","audioReconized":"Casa VIva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa VIva'}
+{"timestamp": "2025-03-18T21:59:09.520856", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa VIva"}}
+Starting Flask server...
+Starting Flask server...
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZh","nlu":{"intent":"greet","audioReconized":"Casa Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa Viva'}
+{"timestamp": "2025-03-18T22:00:04.202005", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZh","nlu":{"intent":"greet","audioReconized":"Casa Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa Viva'}
+{"timestamp": "2025-03-18T22:00:13.945499", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZh","nlu":{"intent":"greet","audioReconized":"Casa Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa Viva'}
+{"timestamp": "2025-03-18T22:00:16.983859", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa Viva"}}
+Starting Flask server...
+Starting Flask server...
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZh","nlu":{"intent":"greet","audioReconized":"Casa Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa Viva'}
+{"timestamp": "2025-03-18T22:02:19.760588", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa Viva"}}
+Starting Flask server...
+Starting Flask server...
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZh","nlu":{"intent":"greet","audioReconized":"Casa Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa Viva'}
+{"timestamp": "2025-03-18T22:08:17.310741", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZh","nlu":{"intent":"greet","audioReconized":"Casa Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa Viva'}
+{"timestamp": "2025-03-18T22:08:22.405800", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZh","nlu":{"intent":"greet","audioReconized":"Casa Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa Viva'}
+{"timestamp": "2025-03-18T22:08:30.820543", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZh","nlu":{"intent":"greet","audioReconized":"Casa Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa Viva'}
+{"timestamp": "2025-03-18T22:08:33.617411", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZh","nlu":{"intent":"greet","audioReconized":"Casa Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa Viva'}
+{"timestamp": "2025-03-18T22:08:37.457955", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa Viva"}}
+Starting Flask server...
+Starting Flask server...
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T22:24:13.423816", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T22:24:18.112619", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T22:24:22.749924", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T22:24:24.208734", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T22:24:26.896187", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T22:24:30.580959", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Starting Flask server...
+Starting Flask server...
+Starting Flask server...
+Starting Flask server...
+Starting Flask server...
+Starting Flask server...
+Starting Flask server...
+Starting Flask server...
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZh","nlu":{"intent":"greet","audioReconized":"Casa Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa Viva'}
+{"timestamp": "2025-03-18T22:44:15.575485", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZh","nlu":{"intent":"greet","audioReconized":"Casa Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa Viva'}
+{"timestamp": "2025-03-18T22:44:24.175910", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa Viva"}}
+Starting Flask server...
+Starting Flask server...
+Starting Flask server...
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZh","nlu":{"intent":"greet","audioReconized":"Casa Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa Viva'}
+{"timestamp": "2025-03-18T22:49:14.514092", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T22:49:15.659885", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T22:49:17.571014", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T22:49:19.674624", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T22:49:21.386197", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T22:49:26.178927", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"RMOhLW1lIHJlY2VpdGFz","nlu":{"intent":"ask_all_recipes","audioReconized":"Dá-me receitas"}}
+Extracted nlu: {'intent': 'ask_all_recipes', 'audioReconized': 'Dá-me receitas'}
+{"timestamp": "2025-03-18T22:57:19.563561", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "ask_all_recipes", "audioReconized": "D\u00e1-me receitas"}}
+Starting Flask server...
+Starting Flask server...
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"RMOhLW1lIHJlY2VpdGFz","nlu":{"intent":"ask_all_recipes","audioReconized":"Dá-me receitas"}}
+Extracted nlu: {'intent': 'ask_all_recipes', 'audioReconized': 'Dá-me receitas'}
+{"timestamp": "2025-03-18T23:00:10.970670", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "ask_all_recipes", "audioReconized": "D\u00e1-me receitas"}}
+Extracted source: None
+Extracted target: None
+Extracted command: {"text":"GREET ASSISTANT TO INICIATE"}
+Extracted nlu: None
+{"timestamp": "2025-03-18T23:00:11.033611", "source": null, "target": null, "nlu": null}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"VMOpbmlzIHZpdm8=","nlu":{"intent":"greet","audioReconized":"Ténis vivo"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Ténis vivo'}
+{"timestamp": "2025-03-18T23:00:42.967877", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "T\u00e9nis vivo"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:01:58.187156", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:02:08.941618", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:02:19.186553", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:02:20.573925", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:02:23.110739", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Starting Flask server...
+Starting Flask server...
+Starting Flask server...
+Starting Flask server...
+Starting Flask server...
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:06:00.673028", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:06:03.766702", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:06:06.233693", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:06:07.560321", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:06:09.761167", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Starting Flask server...
+Starting Flask server...
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZh","nlu":{"intent":"greet","audioReconized":"Casa Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa Viva'}
+{"timestamp": "2025-03-18T23:07:48.535853", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:07:50.743809", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:07:54.492267", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:07:56.497258", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:08:00.078854", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Starting Flask server...
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:10:40.566402", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:10:44.974587", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:10:49.026491", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:10:52.520469", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:15:05.160315", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Starting Flask server...
+Starting Flask server...
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZh","nlu":{"intent":"greet","audioReconized":"Casa Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa Viva'}
+{"timestamp": "2025-03-18T23:18:04.007542", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZh","nlu":{"intent":"greet","audioReconized":"Casa Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa Viva'}
+{"timestamp": "2025-03-18T23:18:10.861881", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZh","nlu":{"intent":"greet","audioReconized":"Casa Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa Viva'}
+{"timestamp": "2025-03-18T23:18:12.917375", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZh","nlu":{"intent":"greet","audioReconized":"Casa Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa Viva'}
+{"timestamp": "2025-03-18T23:18:18.186365", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZh","nlu":{"intent":"greet","audioReconized":"Casa Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa Viva'}
+{"timestamp": "2025-03-18T23:18:19.590428", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa Viva"}}
+Starting Flask server...
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:20:27.339794", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:20:28.354877", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:20:30.408418", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:20:31.847802", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:20:34.048601", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:20:35.912146", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Starting Flask server...
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:22:49.899652", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:22:51.212324", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:22:56.742484", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:22:58.660068", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"RMOhLW1lIHJlY2VpdGFz","nlu":{"intent":"ask_all_recipes","audioReconized":"Dá-me receitas"}}
+Extracted nlu: {'intent': 'ask_all_recipes', 'audioReconized': 'Dá-me receitas'}
+{"timestamp": "2025-03-18T23:23:41.099304", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "ask_all_recipes", "audioReconized": "D\u00e1-me receitas"}}
+Starting Flask server...
+Starting Flask server...
+Starting Flask server...
+Starting Flask server...
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:42:54.004326", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"VMOhcyB2aXZh","nlu":{"intent":"greet","audioReconized":"Tás viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Tás viva'}
+{"timestamp": "2025-03-18T23:42:56.750297", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "T\u00e1s viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZh","nlu":{"intent":"greet","audioReconized":"Casa Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa Viva'}
+{"timestamp": "2025-03-18T23:42:59.488226", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZh","nlu":{"intent":"greet","audioReconized":"Casa Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa Viva'}
+{"timestamp": "2025-03-18T23:43:09.267964", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZh","nlu":{"intent":"greet","audioReconized":"Casa Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa Viva'}
+{"timestamp": "2025-03-18T23:43:14.504261", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa Viva"}}
+Starting Flask server...
+Starting Flask server...
+Starting Flask server...
+Starting Flask server...
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:50:19.870515", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:50:22.165373", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:50:28.924728", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZh","nlu":{"intent":"greet","audioReconized":"Casa Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa Viva'}
+{"timestamp": "2025-03-18T23:50:31.130982", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:50:35.172055", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Starting Flask server...
+Starting Flask server...
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:52:29.873567", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:52:32.588827", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:52:35.232136", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:52:37.725773", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:52:41.042774", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Starting Flask server...
+Starting Flask server...
+Starting Flask server...
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:56:40.695726", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:56:43.996999", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:56:47.610058", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Starting Flask server...
+Starting Flask server...
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:59:06.195779", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:59:07.549577", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:59:09.719221", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YSB2aXZh","nlu":{"intent":"greet","audioReconized":"Viva viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva viva'}
+{"timestamp": "2025-03-18T23:59:20.852068", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-18T23:59:23.627447", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Starting Flask server...
+Starting Flask server...
+Starting Flask server...
+Starting Flask server...
+Starting Flask server...
+Starting Flask server...
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-19T00:07:23.795777", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-19T00:07:24.818459", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-19T00:07:26.947038", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-19T00:07:29.084050", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-19T00:07:32.586366", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Starting Flask server...
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-19T00:10:00.110280", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-19T00:10:09.000331", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-19T00:10:10.832707", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-19T00:10:14.641231", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-19T00:10:20.417627", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YSB2aXZh","nlu":{"intent":"greet","audioReconized":"Viva viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva viva'}
+{"timestamp": "2025-03-19T00:14:02.117232", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva viva"}}
+Starting Flask server...
+Starting Flask server...
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-19T00:23:53.436066", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-19T00:23:54.213577", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-19T00:23:56.325028", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-19T00:23:58.685134", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YSB2aXZh","nlu":{"intent":"greet","audioReconized":"Viva viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva viva'}
+{"timestamp": "2025-03-19T00:24:03.068681", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Q2FzYSBWaXZh","nlu":{"intent":"greet","audioReconized":"Casa Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Casa Viva'}
+{"timestamp": "2025-03-19T00:25:19.457854", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Casa Viva"}}
+Starting Flask server...
+Starting Flask server...
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-19T00:27:25.269977", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-19T00:27:28.306111", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-19T00:27:32.054312", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-19T00:27:38.494344", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Starting Flask server...
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YSB2aXZh","nlu":{"intent":"greet","audioReconized":"Viva viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva viva'}
+{"timestamp": "2025-03-19T00:31:06.492750", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-19T00:31:08.985263", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-19T00:31:11.902802", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-19T00:31:14.667468", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-19T00:31:17.436140", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"U2lt","nlu":{"intent":"affirm","audioReconized":"Sim"}}
+Extracted nlu: {'intent': 'affirm', 'audioReconized': 'Sim'}
+{"timestamp": "2025-03-19T00:34:06.724305", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "affirm", "audioReconized": "Sim"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vm9sdW1lIDM=","nlu":{"intent":"get_quantity_ingredient","quantity":"3","audioReconized":"Volume 3"}}
+Extracted nlu: {'intent': 'get_quantity_ingredient', 'quantity': '3', 'audioReconized': 'Volume 3'}
+{"timestamp": "2025-03-19T00:34:07.877362", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "get_quantity_ingredient", "quantity": "3", "audioReconized": "Volume 3"}}
+Extracted source: None
+Extracted target: None
+Extracted command: {"text":"Tente adicionar um produto"}
+Extracted nlu: None
+{"timestamp": "2025-03-19T00:34:08.194644", "source": null, "target": null, "nlu": null}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"TsOjbyBmYXogbmFkYSBwb3JxdWUgw6kgcG9ycXVlIGVsZSBuw6NvIHJlY29uaGVjZSBuYWRh","nlu":{"intent":"deny","audioReconized":"Não faz nada porque é porque ele não reconhece nada"}}
+Extracted nlu: {'intent': 'deny', 'audioReconized': 'Não faz nada porque é porque ele não reconhece nada'}
+{"timestamp": "2025-03-19T00:34:19.587078", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "deny", "audioReconized": "N\u00e3o faz nada porque \u00e9 porque ele n\u00e3o reconhece nada"}}
+Starting Flask server...
+Starting Flask server...
+Starting Flask server...
+Starting Flask server...
+Starting Flask server...
+Starting Flask server...
+Starting Flask server...
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-19T00:44:07.479247", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YSB2aXZh","nlu":{"intent":"greet","audioReconized":"Viva viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva viva'}
+{"timestamp": "2025-03-19T00:44:22.062707", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-19T00:44:30.132958", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-19T00:44:32.368524", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"Vml2YQ==","nlu":{"intent":"greet","audioReconized":"Viva"}}
+Extracted nlu: {'intent': 'greet', 'audioReconized': 'Viva'}
+{"timestamp": "2025-03-19T00:44:35.493601", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "greet", "audioReconized": "Viva"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"U3VnZXJlIGFsZ28=","nlu":{"intent":"ask_random_recipe","audioReconized":"Sugere algo"}}
+Extracted nlu: {'intent': 'ask_random_recipe', 'audioReconized': 'Sugere algo'}
+{"timestamp": "2025-03-19T00:48:40.006156", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "ask_random_recipe", "audioReconized": "Sugere algo"}}
+Extracted source: None
+Extracted target: None
+Extracted command: {"text":"Sugere algo"}
+Extracted nlu: None
+{"timestamp": "2025-03-19T00:48:52.666311", "source": null, "target": null, "nlu": null}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"U3VnZXJlIGFsZ28=","nlu":{"intent":"ask_random_recipe","audioReconized":"Sugere algo"}}
+Extracted nlu: {'intent': 'ask_random_recipe', 'audioReconized': 'Sugere algo'}
+{"timestamp": "2025-03-19T00:48:52.915031", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "ask_random_recipe", "audioReconized": "Sugere algo"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"QWRpY2lvbmEgMyBiYXRhdGFzIMOgIGRlc3BlbnNh","nlu":{"intent":"add_pantry","quantity":"3","audioReconized":"Adiciona 3 batatas à despensa"}}
+Extracted nlu: {'intent': 'add_pantry', 'quantity': '3', 'audioReconized': 'Adiciona 3 batatas à despensa'}
+{"timestamp": "2025-03-19T00:49:16.306912", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "add_pantry", "quantity": "3", "audioReconized": "Adiciona 3 batatas \u00e0 despensa"}}
+Extracted source: None
+Extracted target: None
+Extracted command: {"text":"Get Expiration Date"}
+Extracted nlu: None
+{"timestamp": "2025-03-19T00:49:17.395759", "source": null, "target": null, "nlu": null}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"MTEgZG8=","nlu":{"intent":"get_quantity_ingredient","quantity":"11","audioReconized":"11 do"}}
+Extracted nlu: {'intent': 'get_quantity_ingredient', 'quantity': '11', 'audioReconized': '11 do'}
+{"timestamp": "2025-03-19T00:49:25.090331", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "get_quantity_ingredient", "quantity": "11", "audioReconized": "11 do"}}
+Extracted source: None
+Extracted target: None
+Extracted command: {"text":"Get Expiration Date"}
+Extracted nlu: None
+{"timestamp": "2025-03-19T00:49:25.153385", "source": null, "target": null, "nlu": null}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"MTEvMDEgMjAyNQ==","nlu":{"intent":"get_expiration_date","audioReconized":"11/01 2025"}}
+Extracted nlu: {'intent': 'get_expiration_date', 'audioReconized': '11/01 2025'}
+{"timestamp": "2025-03-19T00:49:28.702061", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "get_expiration_date", "audioReconized": "11/01 2025"}}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"TW9zdHJhLW1lIG8gcXVlIHRlbmhvIG5hIGRlc3BlbnNh","nlu":{"intent":"ask_pantry","audioReconized":"Mostra-me o que tenho na despensa"}}
+Extracted nlu: {'intent': 'ask_pantry', 'audioReconized': 'Mostra-me o que tenho na despensa'}
+{"timestamp": "2025-03-19T00:49:48.881870", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "ask_pantry", "audioReconized": "Mostra-me o que tenho na despensa"}}
+Extracted source: None
+Extracted target: None
+Extracted command: {"text":"Adiciona 3 kg de Arroz à despensa!"}
+Extracted nlu: None
+{"timestamp": "2025-03-19T00:50:24.081565", "source": null, "target": null, "nlu": null}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"QWRpY2lvbmEgMyBrZyBkZSBBcnJveiDDoCBkZXNwZW5zYSE=","nlu":{"intent":"add_pantry","quantity":"3","unit":"kg","name":"Arroz","audioReconized":"Adiciona 3 kg de Arroz à despensa!"}}
+Extracted nlu: {'intent': 'add_pantry', 'quantity': '3', 'unit': 'kg', 'name': 'Arroz', 'audioReconized': 'Adiciona 3 kg de Arroz à despensa!'}
+{"timestamp": "2025-03-19T00:50:24.329854", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "add_pantry", "quantity": "3", "unit": "kg", "name": "Arroz", "audioReconized": "Adiciona 3 kg de Arroz \u00e0 despensa!"}}
+Extracted source: None
+Extracted target: None
+Extracted command: {"text":"Get Expiration Date"}
+Extracted nlu: None
+{"timestamp": "2025-03-19T00:50:25.333824", "source": null, "target": null, "nlu": null}
+Extracted source: None
+Extracted target: None
+Extracted command: {"text":"11/01/2025"}
+Extracted nlu: None
+{"timestamp": "2025-03-19T00:50:32.679330", "source": null, "target": null, "nlu": null}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"MTEvMDEvMjAyNQ==","nlu":{"intent":"get_expiration_date","audioReconized":"11/01/2025"}}
+Extracted nlu: {'intent': 'get_expiration_date', 'audioReconized': '11/01/2025'}
+{"timestamp": "2025-03-19T00:50:32.724443", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "get_expiration_date", "audioReconized": "11/01/2025"}}
+Extracted source: None
+Extracted target: None
+Extracted command: {"text":"Mostra-me o que tenho na despensa"}
+Extracted nlu: None
+{"timestamp": "2025-03-19T00:50:42.197188", "source": null, "target": null, "nlu": null}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"TW9zdHJhLW1lIG8gcXVlIHRlbmhvIG5hIGRlc3BlbnNh","nlu":{"intent":"ask_pantry","audioReconized":"Mostra-me o que tenho na despensa"}}
+Extracted nlu: {'intent': 'ask_pantry', 'audioReconized': 'Mostra-me o que tenho na despensa'}
+{"timestamp": "2025-03-19T00:50:42.446740", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "ask_pantry", "audioReconized": "Mostra-me o que tenho na despensa"}}
+Extracted source: None
+Extracted target: None
+Extracted command: {"text":"Adiciona 3 kg de Arroz à despensa!"}
+Extracted nlu: None
+{"timestamp": "2025-03-19T00:50:49.930992", "source": null, "target": null, "nlu": null}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"QWRpY2lvbmEgMyBrZyBkZSBBcnJveiDDoCBkZXNwZW5zYSE=","nlu":{"intent":"add_pantry","quantity":"3","unit":"kg","name":"Arroz","audioReconized":"Adiciona 3 kg de Arroz à despensa!"}}
+Extracted nlu: {'intent': 'add_pantry', 'quantity': '3', 'unit': 'kg', 'name': 'Arroz', 'audioReconized': 'Adiciona 3 kg de Arroz à despensa!'}
+{"timestamp": "2025-03-19T00:50:50.168000", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "add_pantry", "quantity": "3", "unit": "kg", "name": "Arroz", "audioReconized": "Adiciona 3 kg de Arroz \u00e0 despensa!"}}
+Extracted source: None
+Extracted target: None
+Extracted command: {"text":"Get Expiration Date"}
+Extracted nlu: None
+{"timestamp": "2025-03-19T00:50:51.183909", "source": null, "target": null, "nlu": null}
+Extracted source: None
+Extracted target: None
+Extracted command: {"text":"12/11/2025"}
+Extracted nlu: None
+{"timestamp": "2025-03-19T00:50:59.733208", "source": null, "target": null, "nlu": null}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"MTIvMTEvMjAyNQ==","nlu":{"intent":"get_expiration_date","audioReconized":"12/11/2025"}}
+Extracted nlu: {'intent': 'get_expiration_date', 'audioReconized': '12/11/2025'}
+{"timestamp": "2025-03-19T00:50:59.767313", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "get_expiration_date", "audioReconized": "12/11/2025"}}
+Extracted source: None
+Extracted target: None
+Extracted command: {"text":"Mostra-me o que tenho na despensa"}
+Extracted nlu: None
+{"timestamp": "2025-03-19T00:51:08.117207", "source": null, "target": null, "nlu": null}
+Extracted source: SPEECHIN
+Extracted target: IM
+Extracted command: {"recognized":["SPEECH","SPEECHIN","APP"],"text":"TW9zdHJhLW1lIG8gcXVlIHRlbmhvIG5hIGRlc3BlbnNh","nlu":{"intent":"ask_pantry","audioReconized":"Mostra-me o que tenho na despensa"}}
+Extracted nlu: {'intent': 'ask_pantry', 'audioReconized': 'Mostra-me o que tenho na despensa'}
+{"timestamp": "2025-03-19T00:51:08.384953", "source": "SPEECHIN", "target": "IM", "nlu": {"intent": "ask_pantry", "audioReconized": "Mostra-me o que tenho na despensa"}}

@@ -1,0 +1,42 @@
+version: "3.1"
+
+rules:
+- rule: Goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Affirm
+  steps:
+  - intent: affirm
+  - action: utter_affirm
+
+- rule: Deny
+  steps:
+  - intent: deny
+  - action: utter_deny
+
+- rule: validateRecipe
+  steps:
+    - intent: confirm_step
+    - action: action_confirm_step
+
+- rule: askRandomRecipe
+  steps:
+  - intent: ask_random_recipe
+  - action: action_random_recipe
+
+- rule: askSpecificRecipe
+  steps:
+  - intent: ask_specific_recipe
+  - action: action_specific_recipe
+
+- rule: repeat
+  steps:
+  - intent: repeat_step
+  - action: action_repeat_step
+
+- rule: default
+  steps:
+  - action: utter_default
+

@@ -1,0 +1,43 @@
+{
+  "text": {
+    "o": 9,
+    "assistente": 1,
+    "foi": 4,
+    "útil": 13,
+    "inútil": 6,
+    "muito": 8,
+    "pouco": 10,
+    "a": 0,
+    "resposta": 11,
+    "do": 2,
+    "rápida": 12,
+    "lenta": 7,
+    "eficiente": 3,
+    "ineficiente": 5
+  },
+  "intent": {
+    "give_feedback": 1,
+    "bot_challenge": 0,
+    "goodbye": 2
+  },
+  "response": null,
+  "action_name": {
+    "action_listen": 6,
+    "action_restart": 7,
+    "action_session_start": 9,
+    "action_default_fallback": 4,
+    "action_deactivate_loop": 1,
+    "action_revert_fallback_events": 8,
+    "action_default_ask_affirmation": 2,
+    "action_default_ask_rephrase": 3,
+    "action_two_stage_fallback": 10,
+    "action_unlikely_intent": 11,
+    "action_back": 0,
+    "action_extract_slots": 5,
+    "utter_goodbye": 12,
+    "utter_iamabot": 13,
+    "utter_thank_you": 14
+  },
+  "action_text": null,
+  "intent_response_key": null
+}

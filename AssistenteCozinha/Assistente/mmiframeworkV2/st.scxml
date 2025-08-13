@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<scxml xmlns="http://www.w3.org/2005/07/scxml" 
+	xmlns:commons="http://commons.apache.org/scxml"
+	xmlns:emma="http://www.w3.org/2003/04/emma" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:mmi="http://www.w3.org/2008/04/mmi-arch"
+	xsi:schemaLocation="http://www.w3.org/2005/07/scxml scxml.xsd http://commons.apache.org/scxml commons.xsd http://www.w3.org/2008/04/mmi-arch mmi.xsd http://www.w3.org/2003/04/emma emma.xsd" version="1.0"
+	initialstate="init">
+
+	<!-- data model definition -->
+	<datamodel>
+		<!-- top-level variables -->
+		<data name="contextId" />
+		<data name="requestId" />
+		<data name="sourceMC" />
+		<data name="source" expr="IM" />
+		<data name="Action" />
+		<data name="currAction" />
+		<data name="KINECT" />
+		<data name="ASR" /> 
+		<data name="TTS" /> 
+		<data name="GUI" /> 
+		<data name="FUSION" /> 
+		<data name="JSONDATA" /> 
+		<data name="TARG" /> 
+		<data name="is_feedback_interaction" expr="false" />
+	</datamodel>
+
+	<state id="init">
+		<onentry>
+			<log label="[init]" expr="MULTIMODAL FRAMEWORK" />
+		</onentry>
+		<transition target="main"/>
+	</state>
+		
+	<state id="main" initial="events">
+
+		<transition event="mmi:extensionNotification" target="events">
+
+			<log label="[SCXML]" expr="'→ Estado atual: events (via extensionNotification)'" />
+			<log label="[Events]" expr="'extensionNotification recebido'" />
+	
+				
+			<if cond="${_eventdata.sourceMC eq 'ASSESSMENT'}">
+				<log label="[SCXML]" expr="'[SCXML] extensionNotification recebido do ASSESSMENT'" />
+				<log label="[DEBUG] evento recebido" expr="${DATA(_eventdata.data, 'event')}" />
+					
+				<if cond="${DATA(_eventdata.data, 'event') eq 'feedbackStart'}">
+					<log label="[SCXML]" expr="'[SCXML] Feedback START recebido via extensionNotification'" />
+					<send event="mmi:feedbackStart" />
+				</if>
+
+				<if cond="${DATA(_eventdata.data, 'event') eq 'feedbackStop'}">
+					<log label="[SCXML]" expr="'[SCXML] Feedback STOP recebido via extensionNotification'" />
+					<send event="mmi:feedbackStop" />
+				</if>
+			</if>
+		</transition>
+	
+
+		<transition event="mmi:feedbackStart" target="waiting_for_feedback" />
+		<transition event="mmi:feedbackStop" target="events" type="external">
+    		<log label="[TRANSITION]" expr="'→ Transição global: qualquer → events (feedbackStop)'" />
+    	</transition>
+		<!-- WAITING FOR FEEDBACK STATE -->
+		<state id="waiting_for_feedback">
+			<onentry>
+				<log label="[STATE]" expr="'→ Entrou no estado waiting_for_feedback'" />
+				<assign name="is_feedback_interaction" expr="true" />
+			</onentry>
+			<onexit>
+				<log label="[STATE]" expr="'← Saiu do estado waiting_for_feedback'" />
+				<assign name="is_feedback_interaction" expr="false" />
+			</onexit>
+			<transition event="mmi:extensionNotification" target="waiting_for_feedback">
+				<log label="[SCXML]" expr="'→ Estado atual: waiting_for_feedback (via extensionNotification)'" />
+				<log label="[Events]" expr="'extensionNotification recebido'" />
+				
+				<if cond="${_eventdata.sourceMC eq 'ASSESSMENT'}">
+					<log label="[SCXML]" expr="'[SCXML] extensionNotification recebido do ASSESSMENT'" />
+					<log label="[DEBUG] evento recebido" expr="${DATA(_eventdata.data, 'event')}" />
+					
+					<if cond="${DATA(_eventdata.data, 'event') eq 'feedbackStop'}">
+						<log label="[SCXML]" expr="'[SCXML] Feedback STOP recebido via extensionNotification'" />
+						<send event="mmi:feedbackStop" type="scxml"/>
+					</if>
+				</if>
+				<log label="[DEBUG] sourceMC recebido" expr="${_eventdata.sourceMC}" />
+				<log label="[DEBUG] JSONDATA recebido" expr="${_eventdata.data}" />
+				<log label="[DEBUG] Condição de envio será avaliada agora" />
+				<log label="[DEBUG] Dados brutos recebidos" expr="${_eventdata.data}" />
+				<if cond="${DATA(_eventdata.data, 'event') ne 'feedbackStart' and DATA(_eventdata.data, 'event') ne 'feedbackStop'}">
+					<log label="[SCXML]" expr="'[SCXML] Resposta do utilizador recebida durante feedback → será reenviada para o ASSESSMENT'" />
+					
+					<!-- Enviar startRequest para ASSESSMENT -->
+					<assign name="currAction" expr="command" />
+					<assign name="Action" expr="${_eventdata.data}" />
+					<commons:var name="startRequest" expr="${mmi:newStartRequest(contextId, source, 'ASSESSMENT', mmi:newRequestId(contextId), currAction, Action)}" />
+					<!--<send event="mmi:startRequest" target="ASSESSMENT" targettype="MC" namelist="startRequest" /> -->
+					<log label="[DEBUG] ---------Texto z enviar para o ASSESSMENT (startRequest)" expr="${Action}" />
+					<send event="mmi:startRequest" target="ASSESSMENT" targettype="MC" namelist="startRequest" />
+					
+					
+					<!-- Agora sim, termina o feedback -->
+					<send event="mmi:feedbackStop" type="scxml" delay="1000ms"/>
+				</if>
+			</transition>
+			<transition event="mmi:feedbackStop" target="events">
+				<log label="[TRANSITION]" expr="'→ Transição: waiting_for_feedback → events (feedbackStop)'" />
+			</transition>
+		</state>
+
+		<state id="init_register">
+			<onentry>
+				<log label="[init_register]" expr="OK" />
+			</onentry>
+		
+			<!-- RECEIVED newContextRequest -->
+			<transition event="mmi:newContextRequest" target="init_register">
+				<assign name="requestId" expr="${_eventdata.requestID}" />
+				<assign name="sourceMC" expr="${_eventdata.sourceMC}" />
+				<assign name="contextId" expr="${mmi:newContextId()}" />
+				
+				<commons:var name="newContextResponse" expr="${mmi:newContextResponse(contextId, source, sourceMC, requestId)}" />
+				<send event="mmi:newContextResponse" target="${sourceMC}" targettype="MC" namelist="newContextResponse" />
+
+				<if cond="${_eventdata.sourceMC eq 'ASR'}">
+					<assign name="ASR" expr="true" />
+				</if>
+				
+				<if cond="${_eventdata.sourceMC eq 'KINECT'}">
+					<assign name="KINECT" expr="true" />
+				</if>
+				
+				<if cond="${_eventdata.sourceMC eq 'TTS'}">
+					<assign name="TTS" expr="true" />
+				</if>
+				
+				<if cond="${_eventdata.sourceMC eq 'GUI'}">
+					<assign name="GUI" expr="true" />
+				</if>
+			</transition>
+		</state>
+		<state id="events">
+			<onentry>
+				<log label="[SCXML]" expr="'→ Estado atual: events'" />
+				<log label="[Events]" expr="OK" />
+			</onentry>
+			
+			<transition event="mmi:extensionNotification" target="events">
+				<if cond="${is_feedback_interaction eq false}">
+					<log label="[SCXML]" expr="'→ Estado atual: events (via extensionNotification)'" />
+					<log label="[Events]" expr="'extensionNotification recebido'" />
+		
+					
+					<if cond="${_eventdata.sourceMC eq 'ASSESSMENT'}">
+						<log label="[SCXML]" expr="'[SCXML] extensionNotification recebido do ASSESSMENT'" />
+						<log label="[DEBUG] evento recebido" expr="${DATA(_eventdata.data, 'event')}" />
+						
+						<if cond="${DATA(_eventdata.data, 'event') eq 'feedbackStart'}">
+							<log label="[SCXML]" expr="'[SCXML] Feedback START recebido via extensionNotification'" />
+							<send event="mmi:feedbackStart" />
+						</if>
+
+						<if cond="${DATA(_eventdata.data, 'event') eq 'feedbackStop'}">
+							<log label="[SCXML]" expr="'[SCXML] Feedback STOP recebido via extensionNotification'" />
+							<send event="mmi:feedbackStop" />
+						</if>
+					</if>
+				
+					<!-- EVENT FROM LUMINOSITY TO APPMODELS -->
+					<if cond="${_eventdata.sourceMC eq 'LUMINOSITY'}">
+						<assign name="currAction" expr="command" />
+						<assign name="Action" expr="${_eventdata.data}" />
+						<commons:var name="startRequest" expr="${mmi:newStartRequest(contextId, source, 'APPMODELS', mmi:newRequestId(contextId), currAction, Action)}" />
+						<send event="mmi:startRequest" target="APPMODELS" targettype="MC" namelist="startRequest" />
+					</if>
+					
+					<!-- EVENT FROM NOISE TO APPMODELS -->
+					<if cond="${_eventdata.sourceMC eq 'NOISE'}">
+						<assign name="currAction" expr="command" />
+						<assign name="Action" expr="${_eventdata.data}" />
+						<commons:var name="startRequest" expr="${mmi:newStartRequest(contextId, source, 'APPMODELS', mmi:newRequestId(contextId), currAction, Action)}" />
+						<send event="mmi:startRequest" target="APPMODELS" targettype="MC" namelist="startRequest" />
+					</if>
+					
+					<!-- EVENT FROM USERID -->
+					<if cond="${_eventdata.sourceMC eq 'USERID'}">
+						<assign name="JSONDATA" expr="${DATA(_eventdata.data, '//emma/interpretation/command')}" />
+						<assign name="TARG" expr="${JsonParse(JSONDATA, 'recognized/2')}" />
+						<assign name="currAction" expr="command" />
+						<assign name="Action" expr="${_eventdata.data}" />
+						<commons:var name="startRequest" expr="${mmi:newStartRequest(contextId, source, TARG, mmi:newRequestId(contextId), currAction, Action)}" />
+						<send event="mmi:startRequest" target="${TARG}" targettype="MC" namelist="startRequest" />
+					</if>
+					
+					<!-- EVENT FROM APPMODELS -->
+					<if cond="${_eventdata.sourceMC eq 'APPMODELS'}">
+						<assign name="JSONDATA" expr="${DATA(_eventdata.data, '//emma/interpretation/command')}" />
+						<assign name="TARG" expr="${JsonParse(JSONDATA, 'recognized/2')}" />
+						<assign name="currAction" expr="command" />
+						<assign name="Action" expr="${_eventdata.data}" />
+						<commons:var name="startRequest" expr="${mmi:newStartRequest(contextId, source, TARG, mmi:newRequestId(contextId), currAction, Action)}" />
+						<send event="mmi:startRequest" target="${TARG}" targettype="MC" namelist="startRequest" />
+					</if>		
+					
+					<!-- EVENT FROM GUI -->
+					<if cond="${_eventdata.sourceMC eq 'GUI'}">
+						<assign name="JSONDATA" expr="${DATA(_eventdata.data, '//emma/interpretation/command')}" />
+						<assign name="TARG" expr="${JsonParse(JSONDATA, 'recognized/2')}" />
+						<assign name="currAction" expr="command" />
+						<assign name="Action" expr="${_eventdata.data}" />
+						<commons:var name="startRequest" expr="${mmi:newStartRequest(contextId, source, TARG, mmi:newRequestId(contextId), currAction, Action)}" />
+						<send event="mmi:startRequest" target="${TARG}" targettype="MC" namelist="startRequest" />
+					</if>
+					
+					<!-- EVENT FROM TEXTIN -->
+					<if cond="${_eventdata.sourceMC eq 'TEXTIN'}">
+						<assign name="JSONDATA" expr="${DATA(_eventdata.data, '//emma/interpretation/command')}" />
+						<assign name="TARG" expr="${JsonParse(JSONDATA, 'recognized/2')}" />
+						<assign name="currAction" expr="command" />
+						<assign name="Action" expr="${_eventdata.data}" />
+						<commons:var name="startRequest" expr="${mmi:newStartRequest(contextId, source, TARG, mmi:newRequestId(contextId), currAction, Action)}" />
+						<send event="mmi:startRequest" target="${TARG}" targettype="MC" namelist="startRequest" />
+					</if>
+				
+					<!-- EVENT FROM SPEECHIN -->
+					<if cond="${_eventdata.sourceMC eq 'SPEECHIN'}">
+						<assign name="JSONDATA" expr="${DATA(_eventdata.data, '//emma/interpretation/command')}" />
+						<assign name="TARG" expr="${JsonParse(JSONDATA, 'recognized/2')}" />
+						<assign name="currAction" expr="command" />
+						<assign name="Action" expr="${_eventdata.data}" />
+						<commons:var name="startRequest" expr="${mmi:newStartRequest(contextId, source, TARG, mmi:newRequestId(contextId), currAction, Action)}" />
+						<send event="mmi:startRequest" target="${TARG}" targettype="MC" namelist="startRequest" />
+					</if>
+					
+					<!-- EVENT FROM TEXTOUT -->
+					<if cond="${_eventdata.sourceMC eq 'TEXTOUT'}">
+						<assign name="JSONDATA" expr="${DATA(_eventdata.data, '//emma/interpretation/command')}" />
+						<assign name="TARG" expr="${JsonParse(JSONDATA, 'recognized/2')}" />
+						<assign name="currAction" expr="command" />
+						<assign name="Action" expr="${_eventdata.data}" />
+						<commons:var name="startRequest" expr="${mmi:newStartRequest(contextId, source, TARG, mmi:newRequestId(contextId), currAction, Action)}" />
+						<send event="mmi:startRequest" target="${TARG}" targettype="MC" namelist="startRequest" />
+					</if>
+				
+					<!-- EVENT FROM GRAPHICS -->
+					<if cond="${_eventdata.sourceMC eq 'GRAPHICS'}">
+						<assign name="JSONDATA" expr="${DATA(_eventdata.data, '//emma/interpretation/command')}" />
+						<assign name="TARG" expr="${JsonParse(JSONDATA, 'recognized/2')}" />
+						<assign name="currAction" expr="command" />
+						<assign name="Action" expr="${_eventdata.data}" />
+						<commons:var name="startRequest" expr="${mmi:newStartRequest(contextId, source, TARG, mmi:newRequestId(contextId), currAction, Action)}" />
+						<send event="mmi:startRequest" target="${TARG}" targettype="MC" namelist="startRequest" />
+					</if>
+					
+					<!-- EVENT FROM SPEECHOUT -->
+					<if cond="${_eventdata.sourceMC eq 'SPEECHOUT'}">
+						<assign name="JSONDATA" expr="${DATA(_eventdata.data, '//emma/interpretation/command')}" />
+						<assign name="TARG" expr="${JsonParse(JSONDATA, 'recognized/2')}" />
+						<assign name="currAction" expr="command" />
+						<assign name="Action" expr="${_eventdata.data}" />
+						<commons:var name="startRequest" expr="${mmi:newStartRequest(contextId, source, TARG, mmi:newRequestId(contextId), currAction, Action)}" />
+						<send event="mmi:startRequest" target="${TARG}" targettype="MC" namelist="startRequest" />
+					</if>
+				
+					<!-- EVENT FROM FUSION -->
+					<if cond="${_eventdata.sourceMC eq 'FUSION'}">
+						<assign name="JSONDATA" expr="${DATA(_eventdata.data, '//emma/interpretation/command')}" />
+						<assign name="TARG" expr="${JsonParse(JSONDATA, 'recognized/2')}" />
+						<assign name="currAction" expr="command" />
+						<assign name="Action" expr="${_eventdata.data}" />
+						<commons:var name="startRequest" expr="${mmi:newStartRequest(contextId, source, TARG, mmi:newRequestId(contextId), currAction, Action)}" />
+						<send event="mmi:startRequest" target="${TARG}" targettype="MC" namelist="startRequest" />
+					</if>
+				</if>
+			</transition>
+			
+			<transition event="mmi:startRequest" target="events">
+				<assign name="currAction" expr="command" />
+				<assign name="Action" expr="${_eventdata.data}" />
+				
+				<assign name="requestId" expr="${_eventdata.requestID}" />
+							<assign name="sourceMC" expr="${_eventdata.sourceMC}" />
+							<assign name="contextId" expr="${mmi:newContextId()}" />
+							
+				<commons:var name="startResponse" expr="${mmi:newStartResponse(contextId, source, sourceMC, _eventdata.requestID)}" />
+				<send event="mmi:startResponse"  target="${sourceMC}" targettype="MC" namelist="startResponse" />
+				
+				<if cond="${_eventdata.sourceMC eq 'APPTEXT'}">
+					<commons:var name="startRequest" expr="${mmi:newStartRequest(contextId, source, 'TEXTOUT', mmi:newRequestId(contextId), currAction, Action)}" />
+					<send event="mmi:startRequest" target="TEXTOUT" targettype="MC" namelist="startRequest" />
+				</if>
+				<if cond="${_eventdata.sourceMC eq 'APPSPEECH'}">
+					<commons:var name="startRequest" expr="${mmi:newStartRequest(contextId, source, 'SPEECHOUT', mmi:newRequestId(contextId), currAction, Action)}" />
+					<send event="mmi:startRequest" target="SPEECHOUT" targettype="MC" namelist="startRequest" />
+				</if>
+				<if cond="${_eventdata.sourceMC eq 'SPEECHCONTROL'}">
+					<commons:var name="startRequest" expr="${mmi:newStartRequest(contextId, source, 'SPEECHINCONTROL', mmi:newRequestId(contextId), currAction, Action)}" />
+					<send event="mmi:startRequest" target="SPEECHINCONTROL" targettype="MC" namelist="startRequest" />
+				</if>
+				<!-- ENDPOINT PARA COMUNICAR COM O APPGUI  -->
+				<if cond="${_eventdata.sourceMC eq 'SPEECH_ANSWER'}">
+					<commons:var name="startRequest" expr="${mmi:newStartRequest(contextId, source, 'ASSISTANT_ANSWER', mmi:newRequestId(contextId), currAction, Action)}" />
+					<send event="mmi:startRequest" target="ASSISTANT_ANSWER" targettype="MC" namelist="startRequest" />
+				</if>
+				<!-- ENDPOINT PARA COMUNICAR COM O INDEX(IM) VIA VOZ -->
+				<if cond="${_eventdata.sourceMC eq 'SPEECH_ANSWER'}">
+					<commons:var name="startRequest" expr="${mmi:newStartRequest(contextId, source, 'ASSISTANT_ANSWER', mmi:newRequestId(contextId), currAction, Action)}" />
+					<send event="mmi:startRequest" target="ASSISTANT_ANSWER" targettype="MC" namelist="startRequest" />
+				</if>
+				<!-- ENDPOINT PARA COMUNICAR COM O INDEX(IM) VIA CHAT -->
+				<if cond="${_eventdata.sourceMC eq 'CHAT_ANSWER'}">
+					<commons:var name="startRequest" expr="${mmi:newStartRequest(contextId, source, 'ASSISTANT_ANSWER_CHAT', mmi:newRequestId(contextId), currAction, Action)}" />
+					<send event="mmi:startRequest" target="ASSISTANT_ANSWER_CHAT" targettype="MC" namelist="startRequest" />
+				</if>
+				<!-- ENDPOINT PARA COMUNICAR COM O INDEX(IM) PUSH TO TALK -->
+				<if cond="${_eventdata.sourceMC eq 'PUSH_TALK'}">
+					<commons:var name="startRequest" expr="${mmi:newStartRequest(contextId, source, 'ASSISTANT_ANSWER_CHAT', mmi:newRequestId(contextId), currAction, Action)}" />
+					<send event="mmi:startRequest" target="ASSISTANT_ANSWER_CHAT" targettype="MC" namelist="startRequest" />
+				</if>
+				<if cond="${_eventdata.sourceMC eq 'APPX'}">
+					<commons:var name="startRequest" expr="${mmi:newStartRequest(contextId, source, 'GRAPHICS', mmi:newRequestId(contextId), currAction, Action)}" />
+					<send event="mmi:startRequest" target="GRAPHICS" targettype="MC" namelist="startRequest" />
+				</if>
+				<if cond="${_eventdata.sourceMC eq 'APPMODELS'}">
+					<assign name="JSONDATA" expr="${DATA(_eventdata.data, '//emma/interpretation/command')}" />
+					<assign name="TARG" expr="${JsonParse(JSONDATA, 'recognized/2')}" />
+					<assign name="currAction" expr="command" />
+					<assign name="Action" expr="${_eventdata.data}" />
+					<commons:var name="startRequest" expr="${mmi:newStartRequest(contextId, source, TARG, mmi:newRequestId(contextId), currAction, Action)}" />
+					<send event="mmi:startRequest" target="${TARG}" targettype="MC" namelist="startRequest" />
+				</if>
+			</transition>
+		</state>
+	</state>
+	
+	<state id="quit">
+	</state>
+</scxml>

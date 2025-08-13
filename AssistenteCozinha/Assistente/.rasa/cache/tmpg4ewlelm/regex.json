@@ -1,0 +1,26 @@
+[
+  {
+    "name": "data",
+    "pattern": "\\d{1,2}/\\d{1,2}/\\d{4}"
+  },
+  {
+    "name": "data",
+    "pattern": "\\d{1,2}/\\d{1,2}\\s\\d{4}"
+  },
+  {
+    "name": "data",
+    "pattern": "\\d{1,2}\\sde\\s(?:Janeiro|Fevereiro|Março|Abril|Maio|Junho|Julho|Agosto|Setembro|Outubro|Novembro|Dezembro)\\sde\\s\\d{4}"
+  },
+  {
+    "name": "ingrediente",
+    "pattern": "(?<=de\\s)(\\S+(?:\\s+\\S+)*?)(?=\\s(?:à|na|da)\\ despensa)"
+  },
+  {
+    "name": "quantidade",
+    "pattern": "[0-9]+"
+  },
+  {
+    "name": "receita",
+    "pattern": "(?<=de\\s)(\\S+(?:\\s+\\S+)*)"
+  }
+]

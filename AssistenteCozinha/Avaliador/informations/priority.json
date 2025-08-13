@@ -1,0 +1,7 @@
+{
+    "priority_groups": {
+        "high_priority": 2,
+        "medium_priority": 3,
+        "low_priority": 4
+    }
+}
