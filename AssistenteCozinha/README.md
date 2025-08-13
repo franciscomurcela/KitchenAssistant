@@ -1,7 +1,4 @@
 <h1>KitchenAssistant</h1>
-<h5>Kitchen Assistant for Active Ageing at Home</h5>
-<img src="/readme/img/kitchenAssistant.jpg" alt="Alt Text"> 
-
 <hr>
 
 <h3>Mentors:</h3>
